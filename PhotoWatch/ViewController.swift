@@ -19,29 +19,26 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
         self.filenames = []
         
-        // Initialize the shared DropboxClient
+        // Check if the user is logged in
+        // If so, display photo view controller
         if let token = DropboxAuthManager.sharedAuthManager.getFirstAccessToken() {
+            
+            // Set the sharedClient for re-use
             DropboxClient.sharedClient = DropboxClient(accessToken: token)
-        }
-        
-        if let client = DropboxClient.sharedClient {
             
             // Display image background view w/logout button
             let backgroundViewController = self.storyboard?.instantiateViewControllerWithIdentifier("BackgroundViewController") as! UIViewController
             self.presentViewController(backgroundViewController, animated: false, completion: nil)
             
             // List contents of app folder
-            client.filesListFolder(path: "").response { response, error in
+            DropboxClient.sharedClient.filesListFolder(path: "").response { response, error in
                 if let result = response {
                     println("Folder contents:")
                     for entry in result.entries {
                         println(entry.name)
                         
                         // Check that file is a photo (by file extension)
-                        let components = entry.name.componentsSeparatedByString(".")
-                        let ext = components[components.count - 1]
-                        
-                        if ext == "jpg" || ext == "png" {
+                        if entry.name.hasSuffix(".jpg") || entry.name.hasSuffix(".png") {
                             // Add photo!
                             self.filenames?.append(entry.name)
                         }
@@ -106,6 +103,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        // Number of pages is number of photos
         return self.filenames!.count
     }
     
@@ -114,7 +112,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     }
 
     @IBAction func linkButtonPressed(sender: AnyObject) {
-        // Log in to Dropbox
+        // Present view to log in
         DropboxAuthManager.sharedAuthManager.authorizeFromController(self)
     }
 }

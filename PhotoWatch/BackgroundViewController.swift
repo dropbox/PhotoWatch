@@ -20,10 +20,7 @@ class BackgroundViewController: UIViewController {
                 if let fileURL = item as? NSURL {
                     
                     // Check that file is a photo (by file extension)
-                    let components = fileURL.absoluteString!.componentsSeparatedByString(".")
-                    let ext = components[components.count - 1]
-                    
-                    if ext == "jpg" || ext == "png" {
+                    if fileURL.absoluteString!.hasSuffix(".jpg") || fileURL.absoluteString!.hasSuffix(".png") {
                         
                         // Delete the photo from the app group
                         NSFileManager.defaultManager().removeItemAtURL(fileURL, error: nil)

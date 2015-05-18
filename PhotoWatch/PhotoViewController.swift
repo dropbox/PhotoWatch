@@ -19,8 +19,8 @@ class PhotoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Verify we're authed with Dropbox
-        if let client = DropboxClient.sharedClient, let filename = self.filename {
+        // Display photo for page
+        if let filename = self.filename {
             
             // Get app group shared by phone and watch
             let containerURL = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.com.Dropbox.DropboxPhotoWatch")
@@ -40,7 +40,7 @@ class PhotoViewController: UIViewController {
                     
                     // Download the photo from Dropbox
                     // A thumbnail would be better but there's no endpoint for that in API v2 yet!
-                    client.filesDownload(path: "/\(filename)").response { response, error in
+                    DropboxClient.sharedClient.filesDownload(path: "/\(filename)").response { response, error in
                         
                         if let (metadata, data) = response, image = UIImage(data: data) {
                                 
