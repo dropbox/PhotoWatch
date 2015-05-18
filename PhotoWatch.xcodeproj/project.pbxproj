@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C0F49141B017D85001EB03C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F49131B017D85001EB03C /* AppDelegate.swift */; };
+		4C0F49161B017D85001EB03C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F49151B017D85001EB03C /* ViewController.swift */; };
+		4C0F49191B017D85001EB03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F49171B017D85001EB03C /* Main.storyboard */; };
+		4C0F491B1B017D85001EB03C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F491A1B017D85001EB03C /* Images.xcassets */; };
+		4C0F491E1B017D85001EB03C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F491C1B017D85001EB03C /* LaunchScreen.xib */; };
+		4C0F492A1B017D86001EB03C /* PhotoWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F49291B017D86001EB03C /* PhotoWatchTests.swift */; };
+		4C0F493C1B017DC6001EB03C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F493B1B017DC6001EB03C /* InterfaceController.swift */; };
+		4C0F493E1B017DC6001EB03C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F493D1B017DC6001EB03C /* Images.xcassets */; };
+		4C0F49421B017DC7001EB03C /* PhotoWatch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F49411B017DC7001EB03C /* PhotoWatch WatchKit App.app */; };
+		4C0F494A1B017DC7001EB03C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F49481B017DC7001EB03C /* Interface.storyboard */; };
+		4C0F494C1B017DC7001EB03C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F494B1B017DC7001EB03C /* Images.xcassets */; };
+		4C0F494F1B017DC7001EB03C /* PhotoWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4C0F49371B017DC6001EB03C /* PhotoWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4C6453381B0565C800DF602E /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6453371B0565C800DF602E /* PhotoViewController.swift */; };
+		4CBE65481B0869580057DBFB /* PhotoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE65471B0869580057DBFB /* PhotoInterfaceController.swift */; };
+		4CBE654A1B095FDA0057DBFB /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE65491B095FDA0057DBFB /* BackgroundViewController.swift */; };
+		D40DBAE8B9A6FD0CA6237A7B /* Pods_PhotoWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725F73F476001AC42BBD911B /* Pods_PhotoWatch.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C0F49241B017D86001EB03C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0F49061B017D85001EB03C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C0F490D1B017D85001EB03C;
+			remoteInfo = PhotoWatch;
+		};
+		4C0F49431B017DC7001EB03C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0F49061B017D85001EB03C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C0F49401B017DC7001EB03C;
+			remoteInfo = "PhotoWatch WatchKit App";
+		};
+		4C0F494D1B017DC7001EB03C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0F49061B017D85001EB03C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C0F49361B017DC6001EB03C;
+			remoteInfo = "PhotoWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C0F49561B017DC7001EB03C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4C0F494F1B017DC7001EB03C /* PhotoWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04E6E602C166F9C965B8B7AF /* Pods-PhotoWatch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoWatch WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoWatch WatchKit Extension/Pods-PhotoWatch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		0550C5426B30DD9918CC2A45 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4443D6A9CAC2A03BAD06DDE8 /* Pods-PhotoWatch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoWatch WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoWatch WatchKit Extension/Pods-PhotoWatch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4C0F490E1B017D85001EB03C /* PhotoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0F49121B017D85001EB03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0F49131B017D85001EB03C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C0F49151B017D85001EB03C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C0F49181B017D85001EB03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C0F491A1B017D85001EB03C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C0F491D1B017D85001EB03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4C0F49231B017D86001EB03C /* PhotoWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0F49281B017D86001EB03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0F49291B017D86001EB03C /* PhotoWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWatchTests.swift; sourceTree = "<group>"; };
+		4C0F49371B017DC6001EB03C /* PhotoWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PhotoWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0F493A1B017DC6001EB03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0F493B1B017DC6001EB03C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4C0F493D1B017DC6001EB03C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C0F49411B017DC7001EB03C /* PhotoWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PhotoWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0F49471B017DC7001EB03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0F49491B017DC7001EB03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4C0F494B1B017DC7001EB03C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C6453371B0565C800DF602E /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		4C64536B1B08120F00DF602E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Pods/Alamofire.framework"; sourceTree = "<group>"; };
+		4C64536C1B08120F00DF602E /* SwiftyDropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDropbox.framework; path = "Pods/../build/Debug-iphoneos/Pods/SwiftyDropbox.framework"; sourceTree = "<group>"; };
+		4C64536F1B0812E400DF602E /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		4CBE65451B0826990057DBFB /* PhotoWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PhotoWatch.entitlements; sourceTree = "<group>"; };
+		4CBE65461B0827060057DBFB /* PhotoWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PhotoWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		4CBE65471B0869580057DBFB /* PhotoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInterfaceController.swift; sourceTree = "<group>"; };
+		4CBE65491B095FDA0057DBFB /* BackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
+		54CCB8760893F2728D4B20EF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B54DEC1CF58EABFBFE0E196 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		725F73F476001AC42BBD911B /* Pods_PhotoWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8510336AAF51352625759975 /* Pods_PhotoWatch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoWatch_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F8C0631809BB1C8135E2488 /* Pods-PhotoWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoWatch/Pods-PhotoWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		CE843175278765B8C1EE57AA /* Pods-PhotoWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoWatch/Pods-PhotoWatch.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C0F490B1B017D85001EB03C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40DBAE8B9A6FD0CA6237A7B /* Pods_PhotoWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F49201B017D86001EB03C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F49341B017DC6001EB03C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A198CDFCF6DBCD25BF69112 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B54DEC1CF58EABFBFE0E196 /* Pods.debug.xcconfig */,
+				0550C5426B30DD9918CC2A45 /* Pods.release.xcconfig */,
+				04E6E602C166F9C965B8B7AF /* Pods-PhotoWatch WatchKit Extension.debug.xcconfig */,
+				4443D6A9CAC2A03BAD06DDE8 /* Pods-PhotoWatch WatchKit Extension.release.xcconfig */,
+				8F8C0631809BB1C8135E2488 /* Pods-PhotoWatch.debug.xcconfig */,
+				CE843175278765B8C1EE57AA /* Pods-PhotoWatch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		21B993FB6948415B466A4C2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C64536F1B0812E400DF602E /* Pods.framework */,
+				4C64536B1B08120F00DF602E /* Alamofire.framework */,
+				4C64536C1B08120F00DF602E /* SwiftyDropbox.framework */,
+				54CCB8760893F2728D4B20EF /* Pods.framework */,
+				8510336AAF51352625759975 /* Pods_PhotoWatch_WatchKit_Extension.framework */,
+				725F73F476001AC42BBD911B /* Pods_PhotoWatch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C0F49051B017D85001EB03C = {
+			isa = PBXGroup;
+			children = (
+				4C0F49101B017D85001EB03C /* PhotoWatch */,
+				4C0F49261B017D86001EB03C /* PhotoWatchTests */,
+				4C0F49381B017DC6001EB03C /* PhotoWatch WatchKit Extension */,
+				4C0F49451B017DC7001EB03C /* PhotoWatch WatchKit App */,
+				4C0F490F1B017D85001EB03C /* Products */,
+				1A198CDFCF6DBCD25BF69112 /* Pods */,
+				21B993FB6948415B466A4C2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C0F490F1B017D85001EB03C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F490E1B017D85001EB03C /* PhotoWatch.app */,
+				4C0F49231B017D86001EB03C /* PhotoWatchTests.xctest */,
+				4C0F49371B017DC6001EB03C /* PhotoWatch WatchKit Extension.appex */,
+				4C0F49411B017DC7001EB03C /* PhotoWatch WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C0F49101B017D85001EB03C /* PhotoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				4CBE65451B0826990057DBFB /* PhotoWatch.entitlements */,
+				4C0F49131B017D85001EB03C /* AppDelegate.swift */,
+				4C0F49151B017D85001EB03C /* ViewController.swift */,
+				4CBE65491B095FDA0057DBFB /* BackgroundViewController.swift */,
+				4C6453371B0565C800DF602E /* PhotoViewController.swift */,
+				4C0F49171B017D85001EB03C /* Main.storyboard */,
+				4C0F491A1B017D85001EB03C /* Images.xcassets */,
+				4C0F491C1B017D85001EB03C /* LaunchScreen.xib */,
+				4C0F49111B017D85001EB03C /* Supporting Files */,
+			);
+			path = PhotoWatch;
+			sourceTree = "<group>";
+		};
+		4C0F49111B017D85001EB03C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F49121B017D85001EB03C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C0F49261B017D86001EB03C /* PhotoWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F49291B017D86001EB03C /* PhotoWatchTests.swift */,
+				4C0F49271B017D86001EB03C /* Supporting Files */,
+			);
+			path = PhotoWatchTests;
+			sourceTree = "<group>";
+		};
+		4C0F49271B017D86001EB03C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F49281B017D86001EB03C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C0F49381B017DC6001EB03C /* PhotoWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4CBE65461B0827060057DBFB /* PhotoWatch WatchKit Extension.entitlements */,
+				4C0F493B1B017DC6001EB03C /* InterfaceController.swift */,
+				4CBE65471B0869580057DBFB /* PhotoInterfaceController.swift */,
+				4C0F493D1B017DC6001EB03C /* Images.xcassets */,
+				4C0F49391B017DC6001EB03C /* Supporting Files */,
+			);
+			path = "PhotoWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4C0F49391B017DC6001EB03C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F493A1B017DC6001EB03C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C0F49451B017DC7001EB03C /* PhotoWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F49481B017DC7001EB03C /* Interface.storyboard */,
+				4C0F494B1B017DC7001EB03C /* Images.xcassets */,
+				4C0F49461B017DC7001EB03C /* Supporting Files */,
+			);
+			path = "PhotoWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		4C0F49461B017DC7001EB03C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F49471B017DC7001EB03C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C0F490D1B017D85001EB03C /* PhotoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0F492D1B017D86001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatch" */;
+			buildPhases = (
+				85B976D94789C178F999E654 /* Check Pods Manifest.lock */,
+				4C0F490A1B017D85001EB03C /* Sources */,
+				4C0F490B1B017D85001EB03C /* Frameworks */,
+				4C0F490C1B017D85001EB03C /* Resources */,
+				4C0F49561B017DC7001EB03C /* Embed App Extensions */,
+				7DBBE81CD41F4433D891A86E /* Embed Pods Frameworks */,
+				FBE82359C5C77000BA5D19B1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C0F494E1B017DC7001EB03C /* PBXTargetDependency */,
+			);
+			name = PhotoWatch;
+			productName = PhotoWatch;
+			productReference = 4C0F490E1B017D85001EB03C /* PhotoWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C0F49221B017D86001EB03C /* PhotoWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0F49301B017D86001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatchTests" */;
+			buildPhases = (
+				4C0F491F1B017D86001EB03C /* Sources */,
+				4C0F49201B017D86001EB03C /* Frameworks */,
+				4C0F49211B017D86001EB03C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C0F49251B017D86001EB03C /* PBXTargetDependency */,
+			);
+			name = PhotoWatchTests;
+			productName = PhotoWatchTests;
+			productReference = 4C0F49231B017D86001EB03C /* PhotoWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C0F49361B017DC6001EB03C /* PhotoWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0F49531B017DC7001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatch WatchKit Extension" */;
+			buildPhases = (
+				4C0F49331B017DC6001EB03C /* Sources */,
+				4C0F49341B017DC6001EB03C /* Frameworks */,
+				4C0F49351B017DC6001EB03C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C0F49441B017DC7001EB03C /* PBXTargetDependency */,
+			);
+			name = "PhotoWatch WatchKit Extension";
+			productName = "PhotoWatch WatchKit Extension";
+			productReference = 4C0F49371B017DC6001EB03C /* PhotoWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		4C0F49401B017DC7001EB03C /* PhotoWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0F49501B017DC7001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatch WatchKit App" */;
+			buildPhases = (
+				4C0F493F1B017DC7001EB03C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PhotoWatch WatchKit App";
+			productName = "PhotoWatch WatchKit App";
+			productReference = 4C0F49411B017DC7001EB03C /* PhotoWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C0F49061B017D85001EB03C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Dropbox;
+				TargetAttributes = {
+					4C0F490D1B017D85001EB03C = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = V49TWGK7ZB;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					4C0F49221B017D86001EB03C = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 4C0F490D1B017D85001EB03C;
+					};
+					4C0F49361B017DC6001EB03C = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = V49TWGK7ZB;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					4C0F49401B017DC7001EB03C = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = V49TWGK7ZB;
+					};
+				};
+			};
+			buildConfigurationList = 4C0F49091B017D85001EB03C /* Build configuration list for PBXProject "PhotoWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C0F49051B017D85001EB03C;
+			productRefGroup = 4C0F490F1B017D85001EB03C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C0F490D1B017D85001EB03C /* PhotoWatch */,
+				4C0F49221B017D86001EB03C /* PhotoWatchTests */,
+				4C0F49361B017DC6001EB03C /* PhotoWatch WatchKit Extension */,
+				4C0F49401B017DC7001EB03C /* PhotoWatch WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C0F490C1B017D85001EB03C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0F49191B017D85001EB03C /* Main.storyboard in Resources */,
+				4C0F491E1B017D85001EB03C /* LaunchScreen.xib in Resources */,
+				4C0F491B1B017D85001EB03C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F49211B017D86001EB03C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F49351B017DC6001EB03C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0F493E1B017DC6001EB03C /* Images.xcassets in Resources */,
+				4C0F49421B017DC7001EB03C /* PhotoWatch WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F493F1B017DC7001EB03C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0F494A1B017DC7001EB03C /* Interface.storyboard in Resources */,
+				4C0F494C1B017DC7001EB03C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DBBE81CD41F4433D891A86E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoWatch/Pods-PhotoWatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B976D94789C178F999E654 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE82359C5C77000BA5D19B1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoWatch/Pods-PhotoWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C0F490A1B017D85001EB03C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBE654A1B095FDA0057DBFB /* BackgroundViewController.swift in Sources */,
+				4C0F49161B017D85001EB03C /* ViewController.swift in Sources */,
+				4C0F49141B017D85001EB03C /* AppDelegate.swift in Sources */,
+				4C6453381B0565C800DF602E /* PhotoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F491F1B017D86001EB03C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0F492A1B017D86001EB03C /* PhotoWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0F49331B017DC6001EB03C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBE65481B0869580057DBFB /* PhotoInterfaceController.swift in Sources */,
+				4C0F493C1B017DC6001EB03C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C0F49251B017D86001EB03C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C0F490D1B017D85001EB03C /* PhotoWatch */;
+			targetProxy = 4C0F49241B017D86001EB03C /* PBXContainerItemProxy */;
+		};
+		4C0F49441B017DC7001EB03C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C0F49401B017DC7001EB03C /* PhotoWatch WatchKit App */;
+			targetProxy = 4C0F49431B017DC7001EB03C /* PBXContainerItemProxy */;
+		};
+		4C0F494E1B017DC7001EB03C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C0F49361B017DC6001EB03C /* PhotoWatch WatchKit Extension */;
+			targetProxy = 4C0F494D1B017DC7001EB03C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C0F49171B017D85001EB03C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C0F49181B017D85001EB03C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C0F491C1B017D85001EB03C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C0F491D1B017D85001EB03C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		4C0F49481B017DC7001EB03C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C0F49491B017DC7001EB03C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C0F492B1B017D86001EB03C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C0F492C1B017D86001EB03C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C0F492E1B017D86001EB03C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F8C0631809BB1C8135E2488 /* Pods-PhotoWatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoWatch/PhotoWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+				);
+				INFOPLIST_FILE = PhotoWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		4C0F492F1B017D86001EB03C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE843175278765B8C1EE57AA /* Pods-PhotoWatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoWatch/PhotoWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+				);
+				INFOPLIST_FILE = PhotoWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		4C0F49311B017D86001EB03C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoWatch.app/PhotoWatch";
+			};
+			name = Debug;
+		};
+		4C0F49321B017D86001EB03C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoWatch.app/PhotoWatch";
+			};
+			name = Release;
+		};
+		4C0F49511B017DC7001EB03C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = PhotoWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "PhotoWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		4C0F49521B017DC7001EB03C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = PhotoWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "PhotoWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		4C0F49541B017DC7001EB03C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PhotoWatch WatchKit Extension/PhotoWatch WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PhotoWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4C0F49551B017DC7001EB03C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "PhotoWatch WatchKit Extension/PhotoWatch WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "PhotoWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C0F49091B017D85001EB03C /* Build configuration list for PBXProject "PhotoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0F492B1B017D86001EB03C /* Debug */,
+				4C0F492C1B017D86001EB03C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0F492D1B017D86001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0F492E1B017D86001EB03C /* Debug */,
+				4C0F492F1B017D86001EB03C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0F49301B017D86001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0F49311B017D86001EB03C /* Debug */,
+				4C0F49321B017D86001EB03C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0F49501B017DC7001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0F49511B017DC7001EB03C /* Debug */,
+				4C0F49521B017DC7001EB03C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0F49531B017DC7001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0F49541B017DC7001EB03C /* Debug */,
+				4C0F49551B017DC7001EB03C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C0F49061B017D85001EB03C /* Project object */;
+}

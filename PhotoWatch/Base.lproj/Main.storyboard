@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="vXZ-lx-hvc" customClass="ViewController" customModule="PhotoWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQY-bZ-Dmo">
+                                <rect key="frame" x="230" y="282" width="141" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Link to Dropbox">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="P65-Gr-gGX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Watch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtW-Ea-mbT">
+                                <rect key="frame" x="222" y="208" width="157" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="i9K-AO-x4m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View photos from Dropbox on your Apple Watch" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yc-Kz-RF7">
+                                <rect key="frame" x="145" y="249" width="311" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="qFz-V1-ccC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5yc-Kz-RF7" secondAttribute="centerX" id="0nw-CQ-OIg"/>
+                            <constraint firstAttribute="centerX" secondItem="xtW-Ea-mbT" secondAttribute="centerX" id="Bhc-Ku-lhp"/>
+                            <constraint firstItem="qQY-bZ-Dmo" firstAttribute="top" secondItem="5yc-Kz-RF7" secondAttribute="bottom" constant="16" id="IlE-So-FwZ"/>
+                            <constraint firstAttribute="centerX" secondItem="qQY-bZ-Dmo" secondAttribute="centerX" id="Och-rz-LJm"/>
+                            <constraint firstItem="5yc-Kz-RF7" firstAttribute="top" secondItem="xtW-Ea-mbT" secondAttribute="bottom" constant="14" id="Rbo-h5-z3h"/>
+                            <constraint firstItem="xtW-Ea-mbT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="188" id="fpj-3J-BAf"/>
+                            <constraint firstAttribute="centerY" secondItem="qQY-bZ-Dmo" secondAttribute="centerY" id="k7D-ga-5jT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="220"/>
+        </scene>
+        <!--Background View Controller-->
+        <scene sceneID="qbx-Lp-Afn">
+            <objects>
+                <viewController storyboardIdentifier="BackgroundViewController" id="WgM-IQ-XfX" customClass="BackgroundViewController" customModule="PhotoWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A5X-qh-xHp"/>
+                        <viewControllerLayoutGuide type="bottom" id="nfI-Pw-dJZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="byF-2e-aW4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT2-ny-X23">
+                                <rect key="frame" x="235" y="562" width="130" height="30"/>
+                                <state key="normal" title="Logout of Dropbox">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="WgM-IQ-XfX" eventType="touchUpInside" id="tnG-RJ-Ddq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="CT2-ny-X23" secondAttribute="centerX" id="V3Y-BI-AxT"/>
+                            <constraint firstItem="nfI-Pw-dJZ" firstAttribute="top" secondItem="CT2-ny-X23" secondAttribute="bottom" constant="8" id="kef-l9-h9o"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vV3-n4-Zyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="220"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="xxj-ZL-RV4">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Rnm-vu-idJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="D5H-c6-5Hb"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdK-jI-0l2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1483" y="220"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="oIo-w8-tcG">
+            <objects>
+                <viewController storyboardIdentifier="PhotoViewController" id="OmP-V0-m7v" customClass="PhotoViewController" customModule="PhotoWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bgj-Ds-t5o"/>
+                        <viewControllerLayoutGuide type="bottom" id="kyG-tG-RC4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uR5-Ca-gEv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="kne-wr-Ihb">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JXj-zN-gVZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kne-wr-Ihb" firstAttribute="top" secondItem="bgj-Ds-t5o" secondAttribute="bottom" constant="261" id="0pl-VS-9lx"/>
+                            <constraint firstItem="kne-wr-Ihb" firstAttribute="centerX" secondItem="JXj-zN-gVZ" secondAttribute="centerX" id="4Po-i8-CHN"/>
+                            <constraint firstItem="JXj-zN-gVZ" firstAttribute="leading" secondItem="uR5-Ca-gEv" secondAttribute="leading" id="4rE-rO-J5a"/>
+                            <constraint firstItem="JXj-zN-gVZ" firstAttribute="bottom" secondItem="kyG-tG-RC4" secondAttribute="top" id="5wO-1J-C3q"/>
+                            <constraint firstAttribute="trailing" secondItem="JXj-zN-gVZ" secondAttribute="trailing" id="7za-W0-T1i"/>
+                            <constraint firstItem="JXj-zN-gVZ" firstAttribute="top" secondItem="uR5-Ca-gEv" secondAttribute="top" id="8Lb-Re-Bic"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="JXj-zN-gVZ" id="MEo-jb-p2U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwe-sl-a1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2116" y="220"/>
+        </scene>
+    </scenes>
+</document>
