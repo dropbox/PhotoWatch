@@ -1,6 +1,6 @@
 {
   "name": "SwiftyDropbox",
-  "version": "0.1",
+  "version": "0.2",
   "summary": "Dropbox Swift SDK for APIv2",
   "homepage": "https://dropbox.com/developers/",
   "license": "MIT",

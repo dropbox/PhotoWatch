@@ -30,8 +30,7 @@ class BackgroundViewController: UIViewController {
         }
         
         // Unlink from Dropbox
-        DropboxAuthManager.sharedAuthManager.clearStoredAccessTokens()
-        DropboxClient.sharedClient = nil
+        Dropbox.unlinkClient()
         
         // Dismiss view controller to show login screen
         self.dismissViewControllerAnimated(true, completion: nil)

@@ -15,6 +15,6 @@
 // SwiftyDropbox
 #define COCOAPODS_POD_AVAILABLE_SwiftyDropbox
 #define COCOAPODS_VERSION_MAJOR_SwiftyDropbox 0
-#define COCOAPODS_VERSION_MINOR_SwiftyDropbox 1
+#define COCOAPODS_VERSION_MINOR_SwiftyDropbox 2
 #define COCOAPODS_VERSION_PATCH_SwiftyDropbox 0
 

@@ -113,7 +113,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
     @IBAction func linkButtonPressed(sender: AnyObject) {
         // Present view to log in
-        DropboxAuthManager.sharedAuthManager.authorizeFromController(self)
+        Dropbox.authorizeFromController(self)
     }
 }
 

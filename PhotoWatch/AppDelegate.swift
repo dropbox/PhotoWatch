@@ -17,14 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        DropboxAuthManager.sharedAuthManager = DropboxAuthManager(appKey: "rco93k6ms9h0okt")
+        Dropbox.setupWithAppKey("rco93k6ms9h0okt")
         
         return true
     }
 
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
         
-        if let authResult = DropboxAuthManager.sharedAuthManager.handleRedirectURL(url) {
+        if let authResult = Dropbox.handleRedirectURL(url) {
             switch authResult {
             case .Success(let token):
                 println("Success! User is logged into Dropbox.")

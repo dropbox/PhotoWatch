@@ -7,323 +7,344 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02C29A23CE5F3E17900CEBDF /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB1D5D230AA5852EA33BF9B /* Validation.swift */; };
-		0534636ECA84147182AD7EF8 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE46E07B70E958CB303D09A /* Files.swift */; };
-		0D2468D7AEDBCCA6B90AF124 /* BabelValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F38E2ECFEE23FCC7EFC2AD /* BabelValidators.swift */; };
-		13BF3311FF939E00D16CF4D9 /* BabelSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9649ABF4ECA89DEF9C3D1E1 /* BabelSerializers.swift */; };
-		16911EAEB8E406941BF81E9C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0BE19902278ED359E9D6DA /* Alamofire.framework */; };
-		1892C26319A73C9AA8461B31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C93E1C738215DB85D5BFA8 /* Foundation.framework */; };
-		2B7697863F33C4C832D0ABD9 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9355D06405740393FE32A /* Auth.swift */; };
-		65F8714C046175C8381B8E83 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEB72950869762C156BAE16 /* ResponseSerialization.swift */; };
-		6EF43174E459A7E3E2FEEA92 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BC789C28652C5CB3BECC1D /* Client.swift */; };
-		740BBABDD2A3B1D306DB48C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C93E1C738215DB85D5BFA8 /* Foundation.framework */; };
-		7D4361669A5C4F455327ADE2 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E3FE126EFDEBF78DD2753 /* ParameterEncoding.swift */; };
-		7EF3D3134C6B3D5EA0C630BE /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6449A6DAD407519BEF7974 /* Manager.swift */; };
-		866C85E37B40AD00E401F401 /* Pods-PhotoWatch-SwiftyDropbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44449BD2555B41EB2DCEDEC7 /* Pods-PhotoWatch-SwiftyDropbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A45F764A224F1EF5AC3FB9A /* Pods-PhotoWatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24381B7444C28D248044D067 /* Pods-PhotoWatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		980147077394181E7C14D09E /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF92A603BE8EC966582F58 /* Download.swift */; };
-		ADA1833E9837216C2FB82672 /* Pods-PhotoWatch-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E525F64D1837F9FFD3695E0E /* Pods-PhotoWatch-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE8E98155498DB65DBD04C57 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B339C09373BC3956EC3636 /* Alamofire.swift */; };
-		BBA43A34405930D4C8795B77 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9F52F0BD5F5E38897D45DB /* Users.swift */; };
-		C3D5B53A86780073B884913F /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184F7D19CF7739C86998797 /* Upload.swift */; };
-		C93C7B9FD1ABF696D206F8B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1921A251DA27F309A7A5969 /* Request.swift */; };
-		CD62E218BFACFE3033C90CCE /* Pods-PhotoWatch-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C803F6507E5096FE485E0B /* Pods-PhotoWatch-Alamofire-dummy.m */; };
-		EA0DA7D3CDB079EEAD6FCAF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C93E1C738215DB85D5BFA8 /* Foundation.framework */; };
-		EC2CF8448D1BE4FD97172FA5 /* Pods-PhotoWatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9D624E0F69F548BD4501C6 /* Pods-PhotoWatch-dummy.m */; };
-		ED731C3986AC8EE9DD49E930 /* Pods-PhotoWatch-SwiftyDropbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C605C377E3B5639BE9403C /* Pods-PhotoWatch-SwiftyDropbox-dummy.m */; };
+		11F820086848B6D2CCCAFE91 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6826F86A47D16E81BEFC6C2 /* ResponseSerialization.swift */; };
+		13AAB5BCD89CE623C82E2494 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FFD125AD446EBBE4C65BCC /* Validation.swift */; };
+		143512EF6D1699571050CC12 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9CD425F51122E84E7A4D3 /* Request.swift */; };
+		147C156525225EF818CCD8AA /* Pods-PhotoWatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 563B450F41E29203BC3C6AEF /* Pods-PhotoWatch-dummy.m */; };
+		1EA526535FE07B629D91DE54 /* Pods-PhotoWatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E64F8FC21F7721CA64FAB4F8 /* Pods-PhotoWatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3012A4978D60E0671751C691 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2283C704EB4AB1B6356834B /* Files.swift */; };
+		3718BE966F37E2CC250831C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55923DD54E0625DE7056264D /* Foundation.framework */; };
+		65B12A7307A447DE998799D9 /* DropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F2F2D2FB88831B1A25788 /* DropboxClient.swift */; };
+		66965632524F4CC1F3013333 /* BabelSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6441F18436BA80F911D8AD0 /* BabelSerializers.swift */; };
+		70CA013C6227D55C60618E6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55923DD54E0625DE7056264D /* Foundation.framework */; };
+		7AABB9911E6D0371C5324F87 /* BabelValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC46F5ABDED5A4C94FF7EDC1 /* BabelValidators.swift */; };
+		7CC0C3B3E57689533877367E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2B56C87B9A117608E86A9B /* Alamofire.framework */; };
+		7EBF41E134BD74F2C61BC360 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55923DD54E0625DE7056264D /* Foundation.framework */; };
+		83E76C2EAF16877CDCA8AE11 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29852678D9B685EB7389099B /* Client.swift */; };
+		8B0058E89477AAB16D6253C4 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C866C71B58DB0A2CC1C8F /* ParameterEncoding.swift */; };
+		931A68F16D4453C7BE01B3B3 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1B97DB5161ECD23FF119A /* Manager.swift */; };
+		9B0293BCE528F850D0AB0595 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326197C86144B43BCD2B158 /* Alamofire.swift */; };
+		A71179B4161A8A39F965C69F /* Pods-PhotoWatch-SwiftyDropbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93283EEBC075A6E83F458B54 /* Pods-PhotoWatch-SwiftyDropbox-dummy.m */; };
+		A862B954AEFCB65EA5EBC895 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256862673DCB7D988A92F91 /* Auth.swift */; };
+		AA6FCD36BB122BE944B4682A /* Pods-PhotoWatch-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA72FA3FF37E3D795ECD83E4 /* Pods-PhotoWatch-Alamofire-dummy.m */; };
+		BB536D62F6D01D8B8DC9A4EE /* Pods-PhotoWatch-SwiftyDropbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B53C6CC5274CE3204985D7F0 /* Pods-PhotoWatch-SwiftyDropbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04D48CAFDB9D4E14DEFF1AA /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB10DCC69FA9E4600597448 /* Users.swift */; };
+		DC639480A5BEC397A7B5BD9B /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D2435EA9C9B60972EF5A7 /* Download.swift */; };
+		F164F2F4387C6EFFE9B479F9 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1E5C6DC05806069D310A5 /* Upload.swift */; };
+		F3CAA173B414B563B98905D9 /* Pods-PhotoWatch-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1B50ABD7D1D94E3928E6725 /* Pods-PhotoWatch-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2AB8F85355563B9CDC245C3D /* PBXContainerItemProxy */ = {
+		290408E0B0484446B7F5F632 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 00C16EA3C65C29CB0E0CE114 /* Project object */;
+			containerPortal = E4EE02FD3EDCEA6E7254277B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DF75AF5B3104D2771A0F463C;
+			remoteGlobalIDString = 4523D3E844A05342F8A43082;
 			remoteInfo = "Pods-PhotoWatch-SwiftyDropbox";
 		};
-		65672EF97A9AD67C7D054C65 /* PBXContainerItemProxy */ = {
+		6ABC44CD57A491070DAA41C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 00C16EA3C65C29CB0E0CE114 /* Project object */;
+			containerPortal = E4EE02FD3EDCEA6E7254277B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 70D0CFD5E716A99049F2247D;
+			remoteGlobalIDString = A88C056FFA0191C1020C1409;
 			remoteInfo = "Pods-PhotoWatch-Alamofire";
 		};
-		796736F10683D99937FA4B88 /* PBXContainerItemProxy */ = {
+		9B52E6501A9E24B80B558256 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 00C16EA3C65C29CB0E0CE114 /* Project object */;
+			containerPortal = E4EE02FD3EDCEA6E7254277B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 70D0CFD5E716A99049F2247D;
+			remoteGlobalIDString = A88C056FFA0191C1020C1409;
 			remoteInfo = "Pods-PhotoWatch-Alamofire";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		088959098545CEBEBFEF3B09 /* Pods-PhotoWatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhotoWatch.modulemap"; sourceTree = "<group>"; };
-		15ACD0D5F2E2880D91698F10 /* Pods-PhotoWatch-SwiftyDropbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhotoWatch-SwiftyDropbox.modulemap"; sourceTree = "<group>"; };
-		1C0BE19902278ED359E9D6DA /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C6449A6DAD407519BEF7974 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
-		1E92D9DDD78EBAC55FBE124A /* Pods-PhotoWatch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhotoWatch-resources.sh"; sourceTree = "<group>"; };
-		24381B7444C28D248044D067 /* Pods-PhotoWatch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-umbrella.h"; sourceTree = "<group>"; };
-		278D9FDA102D233E82162FE7 /* Pods-PhotoWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch.debug.xcconfig"; sourceTree = "<group>"; };
-		39F035376362EBFD09D42A23 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3CEB72950869762C156BAE16 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		42543981954A40559CFA99F2 /* Pods-PhotoWatch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhotoWatch-acknowledgements.markdown"; sourceTree = "<group>"; };
-		44449BD2555B41EB2DCEDEC7 /* Pods-PhotoWatch-SwiftyDropbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-SwiftyDropbox-umbrella.h"; sourceTree = "<group>"; };
-		45F38E2ECFEE23FCC7EFC2AD /* BabelValidators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BabelValidators.swift; path = Source/BabelValidators.swift; sourceTree = "<group>"; };
-		47CE4F0AAAED3EEE12E14881 /* SwiftyDropbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyDropbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54C803F6507E5096FE485E0B /* Pods-PhotoWatch-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhotoWatch-Alamofire-dummy.m"; sourceTree = "<group>"; };
-		57156C379566F1BE2FD5DC36 /* Pods-PhotoWatch-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-environment.h"; sourceTree = "<group>"; };
-		58746265B1E73B4F3FC2E1B1 /* Pods-PhotoWatch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhotoWatch-acknowledgements.plist"; sourceTree = "<group>"; };
-		6690F50F5B55F4931977E1B3 /* Pods-PhotoWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch.release.xcconfig"; sourceTree = "<group>"; };
-		6897C484682241A57908FCA2 /* Pods-PhotoWatch-SwiftyDropbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch-SwiftyDropbox.xcconfig"; sourceTree = "<group>"; };
-		6ABA3C7AC8F520BF3493889C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B6BC34A7C6C6D66096F4675 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BE46E07B70E958CB303D09A /* Files.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Files.swift; path = Source/Files.swift; sourceTree = "<group>"; };
-		7CA98BA6D213F20C63DAEFC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D9E3FE126EFDEBF78DD2753 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		7F1EE47548A00D693E709AB8 /* Pods-PhotoWatch-SwiftyDropbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-SwiftyDropbox-prefix.pch"; sourceTree = "<group>"; };
-		82BC789C28652C5CB3BECC1D /* Client.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Source/Client.swift; sourceTree = "<group>"; };
-		93BF92A603BE8EC966582F58 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		940555012777AC54C72BAA25 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1921A251DA27F309A7A5969 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		A5A692FEE75815B4932F268F /* Pods-PhotoWatch-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
-		A91A73F8E7169187B2631488 /* Pods-PhotoWatch-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		B1856530B1A1AA1DFAEFC495 /* Pods-PhotoWatch-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch-Alamofire.xcconfig"; sourceTree = "<group>"; };
-		BDB1D5D230AA5852EA33BF9B /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		C6FCBF64EF6F03EA933CDF0F /* Pods-PhotoWatch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhotoWatch-frameworks.sh"; sourceTree = "<group>"; };
-		C7C93E1C738215DB85D5BFA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C82281FE685C7F72D96444F3 /* Pods-PhotoWatch-SwiftyDropbox-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch-SwiftyDropbox-Private.xcconfig"; sourceTree = "<group>"; };
-		CF8C85AE35513AAA193582C6 /* Pods_PhotoWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0B9355D06405740393FE32A /* Auth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth.swift; path = Source/Auth.swift; sourceTree = "<group>"; };
-		D9C329DE12E2FF1C8E1D4E51 /* Pods-PhotoWatch-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhotoWatch-Alamofire.modulemap"; sourceTree = "<group>"; };
-		DB9D624E0F69F548BD4501C6 /* Pods-PhotoWatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhotoWatch-dummy.m"; sourceTree = "<group>"; };
-		E1B339C09373BC3956EC3636 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		E525F64D1837F9FFD3695E0E /* Pods-PhotoWatch-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		E9649ABF4ECA89DEF9C3D1E1 /* BabelSerializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BabelSerializers.swift; path = Source/BabelSerializers.swift; sourceTree = "<group>"; };
-		E9C605C377E3B5639BE9403C /* Pods-PhotoWatch-SwiftyDropbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhotoWatch-SwiftyDropbox-dummy.m"; sourceTree = "<group>"; };
-		F184F7D19CF7739C86998797 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		FC9F52F0BD5F5E38897D45DB /* Users.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Source/Users.swift; sourceTree = "<group>"; };
+		01CA4DEA6F437C9206218792 /* Pods-PhotoWatch-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		0628B7A65EC5EF7BFD3709FD /* Pods-PhotoWatch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhotoWatch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0837F42CEF000E54DAFF7F87 /* Pods-PhotoWatch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhotoWatch-resources.sh"; sourceTree = "<group>"; };
+		1CA06916E8E90CA9DD785461 /* Pods-PhotoWatch-SwiftyDropbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-SwiftyDropbox-prefix.pch"; sourceTree = "<group>"; };
+		23E596D5DC776B43A1039A24 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29852678D9B685EB7389099B /* Client.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Source/Client.swift; sourceTree = "<group>"; };
+		2D1FB3A00E86E747F9ABE9E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3310610D48E671DC9D3DC6D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		396D2435EA9C9B60972EF5A7 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		3A2B56C87B9A117608E86A9B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF7565FE80ED4514BCCE45F /* Pods-PhotoWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		46BC5A2063B58CE7AC870ADE /* Pods-PhotoWatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhotoWatch.modulemap"; sourceTree = "<group>"; };
+		4EA9088BA2E1C8EDA5BE4E20 /* Pods-PhotoWatch-SwiftyDropbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhotoWatch-SwiftyDropbox.modulemap"; sourceTree = "<group>"; };
+		4FB10DCC69FA9E4600597448 /* Users.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Source/Users.swift; sourceTree = "<group>"; };
+		5256862673DCB7D988A92F91 /* Auth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth.swift; path = Source/Auth.swift; sourceTree = "<group>"; };
+		5326197C86144B43BCD2B158 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		53FFD125AD446EBBE4C65BCC /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		55923DD54E0625DE7056264D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		563B450F41E29203BC3C6AEF /* Pods-PhotoWatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhotoWatch-dummy.m"; sourceTree = "<group>"; };
+		5F643BC3D90DA3F9E4768AF6 /* Pods-PhotoWatch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhotoWatch-acknowledgements.plist"; sourceTree = "<group>"; };
+		66188E4E621C481F5C94E923 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7291A7D863C3E5A308111045 /* Pods-PhotoWatch-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PhotoWatch-Alamofire.modulemap"; sourceTree = "<group>"; };
+		77BDE657CC7EC7CFC6DB3BD2 /* Pods_PhotoWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0C866C71B58DB0A2CC1C8F /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		8392ACBB2A29A8E18E20F11D /* Pods-PhotoWatch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhotoWatch-frameworks.sh"; sourceTree = "<group>"; };
+		93283EEBC075A6E83F458B54 /* Pods-PhotoWatch-SwiftyDropbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhotoWatch-SwiftyDropbox-dummy.m"; sourceTree = "<group>"; };
+		9588AA7567F2B947111AFB34 /* Pods-PhotoWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch.release.xcconfig"; sourceTree = "<group>"; };
+		A2283C704EB4AB1B6356834B /* Files.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Files.swift; path = Source/Files.swift; sourceTree = "<group>"; };
+		A850BE5E143AF5ACA8353E48 /* Pods-PhotoWatch-SwiftyDropbox-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch-SwiftyDropbox-Private.xcconfig"; sourceTree = "<group>"; };
+		AA72FA3FF37E3D795ECD83E4 /* Pods-PhotoWatch-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhotoWatch-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		AB74E8D99587EB60138BA4E5 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AD2A1815CBAEF77D5D6769F5 /* Pods-PhotoWatch-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-environment.h"; sourceTree = "<group>"; };
+		B53C6CC5274CE3204985D7F0 /* Pods-PhotoWatch-SwiftyDropbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-SwiftyDropbox-umbrella.h"; sourceTree = "<group>"; };
+		BB5FCDD4F0AEE3455F3A93A7 /* Pods-PhotoWatch-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		C1B50ABD7D1D94E3928E6725 /* Pods-PhotoWatch-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		C58F2F2D2FB88831B1A25788 /* DropboxClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropboxClient.swift; path = Source/DropboxClient.swift; sourceTree = "<group>"; };
+		D3B1B97DB5161ECD23FF119A /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		D6826F86A47D16E81BEFC6C2 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		D9A1E5C6DC05806069D310A5 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		DC46F5ABDED5A4C94FF7EDC1 /* BabelValidators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BabelValidators.swift; path = Source/BabelValidators.swift; sourceTree = "<group>"; };
+		DDA9CD425F51122E84E7A4D3 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		E25A2DD0A366258749A36D67 /* Pods-PhotoWatch-SwiftyDropbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch-SwiftyDropbox.xcconfig"; sourceTree = "<group>"; };
+		E64F8FC21F7721CA64FAB4F8 /* Pods-PhotoWatch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoWatch-umbrella.h"; sourceTree = "<group>"; };
+		E7CB1A0E74B903B0900E7AFE /* Pods-PhotoWatch-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhotoWatch-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		F6441F18436BA80F911D8AD0 /* BabelSerializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BabelSerializers.swift; path = Source/BabelSerializers.swift; sourceTree = "<group>"; };
+		FE6D90EA52195F22A7E1D48C /* SwiftyDropbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyDropbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		676E89593AA94C88446C8F2E /* Frameworks */ = {
+		47175C9993A42B4E20A859D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				740BBABDD2A3B1D306DB48C4 /* Foundation.framework in Frameworks */,
+				70CA013C6227D55C60618E6A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		749A524C61CE182348373104 /* Frameworks */ = {
+		508161A40A0BE985E65EAFB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16911EAEB8E406941BF81E9C /* Alamofire.framework in Frameworks */,
-				EA0DA7D3CDB079EEAD6FCAF8 /* Foundation.framework in Frameworks */,
+				7CC0C3B3E57689533877367E /* Alamofire.framework in Frameworks */,
+				3718BE966F37E2CC250831C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1AF2197281AEEA3264CF509 /* Frameworks */ = {
+		EB5106509391FAC75C625BBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1892C26319A73C9AA8461B31 /* Foundation.framework in Frameworks */,
+				7EBF41E134BD74F2C61BC360 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2646DD185D85F6AC5CD05DD3 /* SwiftyDropbox */ = {
+		1428357C19AB40243E82C4B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0B9355D06405740393FE32A /* Auth.swift */,
-				E9649ABF4ECA89DEF9C3D1E1 /* BabelSerializers.swift */,
-				45F38E2ECFEE23FCC7EFC2AD /* BabelValidators.swift */,
-				82BC789C28652C5CB3BECC1D /* Client.swift */,
-				6BE46E07B70E958CB303D09A /* Files.swift */,
-				FC9F52F0BD5F5E38897D45DB /* Users.swift */,
-				39B91A558AA9B0E4E0FD5F1B /* Support Files */,
+				3A2B56C87B9A117608E86A9B /* Alamofire.framework */,
+				3684DAC34D7AE6E30C42A84F /* iOS */,
 			);
-			path = SwiftyDropbox;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2B15D9AB6D8BD4A5EC53EC53 = {
+		1963211132152A76AAB51C30 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				39F035376362EBFD09D42A23 /* Podfile */,
-				FC8F36C0A66492178D934064 /* Frameworks */,
-				51C23CE14DD1E140C6B29D87 /* Pods */,
-				40F39243528D19E621DF50AB /* Products */,
-				6036CA3D23DB8C5B14682D6A /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		39B91A558AA9B0E4E0FD5F1B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6ABA3C7AC8F520BF3493889C /* Info.plist */,
-				15ACD0D5F2E2880D91698F10 /* Pods-PhotoWatch-SwiftyDropbox.modulemap */,
-				6897C484682241A57908FCA2 /* Pods-PhotoWatch-SwiftyDropbox.xcconfig */,
-				C82281FE685C7F72D96444F3 /* Pods-PhotoWatch-SwiftyDropbox-Private.xcconfig */,
-				E9C605C377E3B5639BE9403C /* Pods-PhotoWatch-SwiftyDropbox-dummy.m */,
-				7F1EE47548A00D693E709AB8 /* Pods-PhotoWatch-SwiftyDropbox-prefix.pch */,
-				44449BD2555B41EB2DCEDEC7 /* Pods-PhotoWatch-SwiftyDropbox-umbrella.h */,
+				2D1FB3A00E86E747F9ABE9E3 /* Info.plist */,
+				4EA9088BA2E1C8EDA5BE4E20 /* Pods-PhotoWatch-SwiftyDropbox.modulemap */,
+				E25A2DD0A366258749A36D67 /* Pods-PhotoWatch-SwiftyDropbox.xcconfig */,
+				A850BE5E143AF5ACA8353E48 /* Pods-PhotoWatch-SwiftyDropbox-Private.xcconfig */,
+				93283EEBC075A6E83F458B54 /* Pods-PhotoWatch-SwiftyDropbox-dummy.m */,
+				1CA06916E8E90CA9DD785461 /* Pods-PhotoWatch-SwiftyDropbox-prefix.pch */,
+				B53C6CC5274CE3204985D7F0 /* Pods-PhotoWatch-SwiftyDropbox-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-PhotoWatch-SwiftyDropbox";
 			sourceTree = "<group>";
 		};
-		40F39243528D19E621DF50AB /* Products */ = {
+		1F5D01963675024771DA4FE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				940555012777AC54C72BAA25 /* Alamofire.framework */,
-				CF8C85AE35513AAA193582C6 /* Pods_PhotoWatch.framework */,
-				47CE4F0AAAED3EEE12E14881 /* SwiftyDropbox.framework */,
+				23E596D5DC776B43A1039A24 /* Alamofire.framework */,
+				77BDE657CC7EC7CFC6DB3BD2 /* Pods_PhotoWatch.framework */,
+				FE6D90EA52195F22A7E1D48C /* SwiftyDropbox.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		48CB1D49B5B3D054D44E11C0 /* Support Files */ = {
+		3684DAC34D7AE6E30C42A84F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6B6BC34A7C6C6D66096F4675 /* Info.plist */,
-				D9C329DE12E2FF1C8E1D4E51 /* Pods-PhotoWatch-Alamofire.modulemap */,
-				B1856530B1A1AA1DFAEFC495 /* Pods-PhotoWatch-Alamofire.xcconfig */,
-				A5A692FEE75815B4932F268F /* Pods-PhotoWatch-Alamofire-Private.xcconfig */,
-				54C803F6507E5096FE485E0B /* Pods-PhotoWatch-Alamofire-dummy.m */,
-				A91A73F8E7169187B2631488 /* Pods-PhotoWatch-Alamofire-prefix.pch */,
-				E525F64D1837F9FFD3695E0E /* Pods-PhotoWatch-Alamofire-umbrella.h */,
+				55923DD54E0625DE7056264D /* Foundation.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-PhotoWatch-Alamofire";
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		51C23CE14DD1E140C6B29D87 /* Pods */ = {
+		58912C9C9FC13D8ABCFA2575 /* SwiftyDropbox */ = {
 			isa = PBXGroup;
 			children = (
-				B41D2CF3025149977C1F478E /* Alamofire */,
-				2646DD185D85F6AC5CD05DD3 /* SwiftyDropbox */,
+				5256862673DCB7D988A92F91 /* Auth.swift */,
+				F6441F18436BA80F911D8AD0 /* BabelSerializers.swift */,
+				DC46F5ABDED5A4C94FF7EDC1 /* BabelValidators.swift */,
+				29852678D9B685EB7389099B /* Client.swift */,
+				C58F2F2D2FB88831B1A25788 /* DropboxClient.swift */,
+				A2283C704EB4AB1B6356834B /* Files.swift */,
+				4FB10DCC69FA9E4600597448 /* Users.swift */,
+				1963211132152A76AAB51C30 /* Support Files */,
 			);
-			name = Pods;
+			path = SwiftyDropbox;
 			sourceTree = "<group>";
 		};
-		6036CA3D23DB8C5B14682D6A /* Targets Support Files */ = {
+		59A45F46C68CE6094F974ACF /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				C540E7F9C3F7ACBEF4DC50B8 /* Pods-PhotoWatch */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B41D2CF3025149977C1F478E /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				E1B339C09373BC3956EC3636 /* Alamofire.swift */,
-				93BF92A603BE8EC966582F58 /* Download.swift */,
-				1C6449A6DAD407519BEF7974 /* Manager.swift */,
-				7D9E3FE126EFDEBF78DD2753 /* ParameterEncoding.swift */,
-				A1921A251DA27F309A7A5969 /* Request.swift */,
-				3CEB72950869762C156BAE16 /* ResponseSerialization.swift */,
-				F184F7D19CF7739C86998797 /* Upload.swift */,
-				BDB1D5D230AA5852EA33BF9B /* Validation.swift */,
-				48CB1D49B5B3D054D44E11C0 /* Support Files */,
+				5326197C86144B43BCD2B158 /* Alamofire.swift */,
+				396D2435EA9C9B60972EF5A7 /* Download.swift */,
+				D3B1B97DB5161ECD23FF119A /* Manager.swift */,
+				7E0C866C71B58DB0A2CC1C8F /* ParameterEncoding.swift */,
+				DDA9CD425F51122E84E7A4D3 /* Request.swift */,
+				D6826F86A47D16E81BEFC6C2 /* ResponseSerialization.swift */,
+				D9A1E5C6DC05806069D310A5 /* Upload.swift */,
+				53FFD125AD446EBBE4C65BCC /* Validation.swift */,
+				9625513B79456A958307D005 /* Support Files */,
 			);
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		C540E7F9C3F7ACBEF4DC50B8 /* Pods-PhotoWatch */ = {
+		632434D06F5386C330E0DBF7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7CA98BA6D213F20C63DAEFC4 /* Info.plist */,
-				088959098545CEBEBFEF3B09 /* Pods-PhotoWatch.modulemap */,
-				42543981954A40559CFA99F2 /* Pods-PhotoWatch-acknowledgements.markdown */,
-				58746265B1E73B4F3FC2E1B1 /* Pods-PhotoWatch-acknowledgements.plist */,
-				DB9D624E0F69F548BD4501C6 /* Pods-PhotoWatch-dummy.m */,
-				57156C379566F1BE2FD5DC36 /* Pods-PhotoWatch-environment.h */,
-				C6FCBF64EF6F03EA933CDF0F /* Pods-PhotoWatch-frameworks.sh */,
-				1E92D9DDD78EBAC55FBE124A /* Pods-PhotoWatch-resources.sh */,
-				24381B7444C28D248044D067 /* Pods-PhotoWatch-umbrella.h */,
-				278D9FDA102D233E82162FE7 /* Pods-PhotoWatch.debug.xcconfig */,
-				6690F50F5B55F4931977E1B3 /* Pods-PhotoWatch.release.xcconfig */,
+				59A45F46C68CE6094F974ACF /* Alamofire */,
+				58912C9C9FC13D8ABCFA2575 /* SwiftyDropbox */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6596C6B6252A57DAB2F9CA52 /* Pods-PhotoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3310610D48E671DC9D3DC6D7 /* Info.plist */,
+				46BC5A2063B58CE7AC870ADE /* Pods-PhotoWatch.modulemap */,
+				0628B7A65EC5EF7BFD3709FD /* Pods-PhotoWatch-acknowledgements.markdown */,
+				5F643BC3D90DA3F9E4768AF6 /* Pods-PhotoWatch-acknowledgements.plist */,
+				563B450F41E29203BC3C6AEF /* Pods-PhotoWatch-dummy.m */,
+				AD2A1815CBAEF77D5D6769F5 /* Pods-PhotoWatch-environment.h */,
+				8392ACBB2A29A8E18E20F11D /* Pods-PhotoWatch-frameworks.sh */,
+				0837F42CEF000E54DAFF7F87 /* Pods-PhotoWatch-resources.sh */,
+				E64F8FC21F7721CA64FAB4F8 /* Pods-PhotoWatch-umbrella.h */,
+				3BF7565FE80ED4514BCCE45F /* Pods-PhotoWatch.debug.xcconfig */,
+				9588AA7567F2B947111AFB34 /* Pods-PhotoWatch.release.xcconfig */,
 			);
 			name = "Pods-PhotoWatch";
 			path = "Target Support Files/Pods-PhotoWatch";
 			sourceTree = "<group>";
 		};
-		D6BCAFEE4AFA90B383EC003D /* iOS */ = {
+		9625513B79456A958307D005 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C7C93E1C738215DB85D5BFA8 /* Foundation.framework */,
+				66188E4E621C481F5C94E923 /* Info.plist */,
+				7291A7D863C3E5A308111045 /* Pods-PhotoWatch-Alamofire.modulemap */,
+				E7CB1A0E74B903B0900E7AFE /* Pods-PhotoWatch-Alamofire.xcconfig */,
+				BB5FCDD4F0AEE3455F3A93A7 /* Pods-PhotoWatch-Alamofire-Private.xcconfig */,
+				AA72FA3FF37E3D795ECD83E4 /* Pods-PhotoWatch-Alamofire-dummy.m */,
+				01CA4DEA6F437C9206218792 /* Pods-PhotoWatch-Alamofire-prefix.pch */,
+				C1B50ABD7D1D94E3928E6725 /* Pods-PhotoWatch-Alamofire-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PhotoWatch-Alamofire";
 			sourceTree = "<group>";
 		};
-		FC8F36C0A66492178D934064 /* Frameworks */ = {
+		C6F6AE3912E6295AAD03AE16 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1C0BE19902278ED359E9D6DA /* Alamofire.framework */,
-				D6BCAFEE4AFA90B383EC003D /* iOS */,
+				6596C6B6252A57DAB2F9CA52 /* Pods-PhotoWatch */,
 			);
-			name = Frameworks;
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FB841E56C8987E84A9639621 = {
+			isa = PBXGroup;
+			children = (
+				AB74E8D99587EB60138BA4E5 /* Podfile */,
+				1428357C19AB40243E82C4B5 /* Frameworks */,
+				632434D06F5386C330E0DBF7 /* Pods */,
+				1F5D01963675024771DA4FE3 /* Products */,
+				C6F6AE3912E6295AAD03AE16 /* Targets Support Files */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		78F01C43F3563DB1BC88E891 /* Headers */ = {
+		9FE531DC3B2F649BE4CFDE3A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADA1833E9837216C2FB82672 /* Pods-PhotoWatch-Alamofire-umbrella.h in Headers */,
+				1EA526535FE07B629D91DE54 /* Pods-PhotoWatch-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3E103654A7FD75CE72C4276 /* Headers */ = {
+		E21192639881EBC5BABC4316 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A45F764A224F1EF5AC3FB9A /* Pods-PhotoWatch-umbrella.h in Headers */,
+				F3CAA173B414B563B98905D9 /* Pods-PhotoWatch-Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA1289A787F01588A3FE4156 /* Headers */ = {
+		EFFAC711D2D6495B937C87DD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				866C85E37B40AD00E401F401 /* Pods-PhotoWatch-SwiftyDropbox-umbrella.h in Headers */,
+				BB536D62F6D01D8B8DC9A4EE /* Pods-PhotoWatch-SwiftyDropbox-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		70B552BC3810AC2FD469B74D /* Pods-PhotoWatch */ = {
+		4523D3E844A05342F8A43082 /* Pods-PhotoWatch-SwiftyDropbox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1FA6B9CF079088C967AA04A /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch" */;
+			buildConfigurationList = 0F149291B5C94E68625A9C00 /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch-SwiftyDropbox" */;
 			buildPhases = (
-				C6BF2179BB8543DABA09EA41 /* Sources */,
-				676E89593AA94C88446C8F2E /* Frameworks */,
-				A3E103654A7FD75CE72C4276 /* Headers */,
+				B4BA594CE9C1C34234B335DE /* Sources */,
+				508161A40A0BE985E65EAFB8 /* Frameworks */,
+				EFFAC711D2D6495B937C87DD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				61A576121A4E88E4C7946CE1 /* PBXTargetDependency */,
-				8549165B1427960D6585B42B /* PBXTargetDependency */,
+				044F8A4A92691A4DF50F8246 /* PBXTargetDependency */,
+			);
+			name = "Pods-PhotoWatch-SwiftyDropbox";
+			productName = "Pods-PhotoWatch-SwiftyDropbox";
+			productReference = FE6D90EA52195F22A7E1D48C /* SwiftyDropbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7488E9A8154BE37A5BE96FD /* Pods-PhotoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8385E05D6DACBD0E62164D96 /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch" */;
+			buildPhases = (
+				AF429D46E229D05136D43A9D /* Sources */,
+				EB5106509391FAC75C625BBA /* Frameworks */,
+				9FE531DC3B2F649BE4CFDE3A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B32B2085213E35E553E13DD0 /* PBXTargetDependency */,
+				BA25277701DFE3BDBF90FF22 /* PBXTargetDependency */,
 			);
 			name = "Pods-PhotoWatch";
 			productName = "Pods-PhotoWatch";
-			productReference = CF8C85AE35513AAA193582C6 /* Pods_PhotoWatch.framework */;
+			productReference = 77BDE657CC7EC7CFC6DB3BD2 /* Pods_PhotoWatch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		70D0CFD5E716A99049F2247D /* Pods-PhotoWatch-Alamofire */ = {
+		A88C056FFA0191C1020C1409 /* Pods-PhotoWatch-Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31C9067659D1C98BC31A74F2 /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch-Alamofire" */;
+			buildConfigurationList = D8147CAEC8C6350A3F5DBF2D /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch-Alamofire" */;
 			buildPhases = (
-				9181627662148132F0ADA92F /* Sources */,
-				A1AF2197281AEEA3264CF509 /* Frameworks */,
-				78F01C43F3563DB1BC88E891 /* Headers */,
+				01ECCF3BEF8C370AD6F9A0CD /* Sources */,
+				47175C9993A42B4E20A859D0 /* Frameworks */,
+				E21192639881EBC5BABC4316 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -331,118 +352,242 @@
 			);
 			name = "Pods-PhotoWatch-Alamofire";
 			productName = "Pods-PhotoWatch-Alamofire";
-			productReference = 940555012777AC54C72BAA25 /* Alamofire.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DF75AF5B3104D2771A0F463C /* Pods-PhotoWatch-SwiftyDropbox */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8DFFFC7631A0C486B0668207 /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch-SwiftyDropbox" */;
-			buildPhases = (
-				4D16EB998FF5BE91774C5BC6 /* Sources */,
-				749A524C61CE182348373104 /* Frameworks */,
-				AA1289A787F01588A3FE4156 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1F3FD39B4D899EF7EE2ADBBA /* PBXTargetDependency */,
-			);
-			name = "Pods-PhotoWatch-SwiftyDropbox";
-			productName = "Pods-PhotoWatch-SwiftyDropbox";
-			productReference = 47CE4F0AAAED3EEE12E14881 /* SwiftyDropbox.framework */;
+			productReference = 23E596D5DC776B43A1039A24 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		00C16EA3C65C29CB0E0CE114 /* Project object */ = {
+		E4EE02FD3EDCEA6E7254277B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = E6387B440D0DCA3584F0F833 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = BA1FA0B9365A1ADD41912D6D /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 2B15D9AB6D8BD4A5EC53EC53;
-			productRefGroup = 40F39243528D19E621DF50AB /* Products */;
+			mainGroup = FB841E56C8987E84A9639621;
+			productRefGroup = 1F5D01963675024771DA4FE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				70B552BC3810AC2FD469B74D /* Pods-PhotoWatch */,
-				70D0CFD5E716A99049F2247D /* Pods-PhotoWatch-Alamofire */,
-				DF75AF5B3104D2771A0F463C /* Pods-PhotoWatch-SwiftyDropbox */,
+				A7488E9A8154BE37A5BE96FD /* Pods-PhotoWatch */,
+				A88C056FFA0191C1020C1409 /* Pods-PhotoWatch-Alamofire */,
+				4523D3E844A05342F8A43082 /* Pods-PhotoWatch-SwiftyDropbox */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4D16EB998FF5BE91774C5BC6 /* Sources */ = {
+		01ECCF3BEF8C370AD6F9A0CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B7697863F33C4C832D0ABD9 /* Auth.swift in Sources */,
-				13BF3311FF939E00D16CF4D9 /* BabelSerializers.swift in Sources */,
-				0D2468D7AEDBCCA6B90AF124 /* BabelValidators.swift in Sources */,
-				6EF43174E459A7E3E2FEEA92 /* Client.swift in Sources */,
-				0534636ECA84147182AD7EF8 /* Files.swift in Sources */,
-				ED731C3986AC8EE9DD49E930 /* Pods-PhotoWatch-SwiftyDropbox-dummy.m in Sources */,
-				BBA43A34405930D4C8795B77 /* Users.swift in Sources */,
+				9B0293BCE528F850D0AB0595 /* Alamofire.swift in Sources */,
+				DC639480A5BEC397A7B5BD9B /* Download.swift in Sources */,
+				931A68F16D4453C7BE01B3B3 /* Manager.swift in Sources */,
+				8B0058E89477AAB16D6253C4 /* ParameterEncoding.swift in Sources */,
+				AA6FCD36BB122BE944B4682A /* Pods-PhotoWatch-Alamofire-dummy.m in Sources */,
+				143512EF6D1699571050CC12 /* Request.swift in Sources */,
+				11F820086848B6D2CCCAFE91 /* ResponseSerialization.swift in Sources */,
+				F164F2F4387C6EFFE9B479F9 /* Upload.swift in Sources */,
+				13AAB5BCD89CE623C82E2494 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9181627662148132F0ADA92F /* Sources */ = {
+		AF429D46E229D05136D43A9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE8E98155498DB65DBD04C57 /* Alamofire.swift in Sources */,
-				980147077394181E7C14D09E /* Download.swift in Sources */,
-				7EF3D3134C6B3D5EA0C630BE /* Manager.swift in Sources */,
-				7D4361669A5C4F455327ADE2 /* ParameterEncoding.swift in Sources */,
-				CD62E218BFACFE3033C90CCE /* Pods-PhotoWatch-Alamofire-dummy.m in Sources */,
-				C93C7B9FD1ABF696D206F8B2 /* Request.swift in Sources */,
-				65F8714C046175C8381B8E83 /* ResponseSerialization.swift in Sources */,
-				C3D5B53A86780073B884913F /* Upload.swift in Sources */,
-				02C29A23CE5F3E17900CEBDF /* Validation.swift in Sources */,
+				147C156525225EF818CCD8AA /* Pods-PhotoWatch-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6BF2179BB8543DABA09EA41 /* Sources */ = {
+		B4BA594CE9C1C34234B335DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC2CF8448D1BE4FD97172FA5 /* Pods-PhotoWatch-dummy.m in Sources */,
+				A862B954AEFCB65EA5EBC895 /* Auth.swift in Sources */,
+				66965632524F4CC1F3013333 /* BabelSerializers.swift in Sources */,
+				7AABB9911E6D0371C5324F87 /* BabelValidators.swift in Sources */,
+				83E76C2EAF16877CDCA8AE11 /* Client.swift in Sources */,
+				65B12A7307A447DE998799D9 /* DropboxClient.swift in Sources */,
+				3012A4978D60E0671751C691 /* Files.swift in Sources */,
+				A71179B4161A8A39F965C69F /* Pods-PhotoWatch-SwiftyDropbox-dummy.m in Sources */,
+				C04D48CAFDB9D4E14DEFF1AA /* Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1F3FD39B4D899EF7EE2ADBBA /* PBXTargetDependency */ = {
+		044F8A4A92691A4DF50F8246 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PhotoWatch-Alamofire";
-			target = 70D0CFD5E716A99049F2247D /* Pods-PhotoWatch-Alamofire */;
-			targetProxy = 796736F10683D99937FA4B88 /* PBXContainerItemProxy */;
+			target = A88C056FFA0191C1020C1409 /* Pods-PhotoWatch-Alamofire */;
+			targetProxy = 9B52E6501A9E24B80B558256 /* PBXContainerItemProxy */;
 		};
-		61A576121A4E88E4C7946CE1 /* PBXTargetDependency */ = {
+		B32B2085213E35E553E13DD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PhotoWatch-Alamofire";
-			target = 70D0CFD5E716A99049F2247D /* Pods-PhotoWatch-Alamofire */;
-			targetProxy = 65672EF97A9AD67C7D054C65 /* PBXContainerItemProxy */;
+			target = A88C056FFA0191C1020C1409 /* Pods-PhotoWatch-Alamofire */;
+			targetProxy = 6ABC44CD57A491070DAA41C4 /* PBXContainerItemProxy */;
 		};
-		8549165B1427960D6585B42B /* PBXTargetDependency */ = {
+		BA25277701DFE3BDBF90FF22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PhotoWatch-SwiftyDropbox";
-			target = DF75AF5B3104D2771A0F463C /* Pods-PhotoWatch-SwiftyDropbox */;
-			targetProxy = 2AB8F85355563B9CDC245C3D /* PBXContainerItemProxy */;
+			target = 4523D3E844A05342F8A43082 /* Pods-PhotoWatch-SwiftyDropbox */;
+			targetProxy = 290408E0B0484446B7F5F632 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		26DFEEA4F92C9878E9C675E4 /* Debug */ = {
+		4BBAE811F06FCF55808D5927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9588AA7567F2B947111AFB34 /* Pods-PhotoWatch.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch/Pods-PhotoWatch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PhotoWatch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		862F1919F955FFF9930E4832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF7565FE80ED4514BCCE45F /* Pods-PhotoWatch.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch/Pods-PhotoWatch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PhotoWatch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		878A872957B6B7AD487FFA70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A850BE5E143AF5ACA8353E48 /* Pods-PhotoWatch-SwiftyDropbox-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Pods-PhotoWatch-SwiftyDropbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Pods-PhotoWatch-SwiftyDropbox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyDropbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		925AC1123928F1C44B7FC4C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A850BE5E143AF5ACA8353E48 /* Pods-PhotoWatch-SwiftyDropbox-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Pods-PhotoWatch-SwiftyDropbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Pods-PhotoWatch-SwiftyDropbox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyDropbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94A6B0A25E00E2A5CA32316A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB5FCDD4F0AEE3455F3A93A7 /* Pods-PhotoWatch-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PhotoWatch-Alamofire/Pods-PhotoWatch-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch-Alamofire/Pods-PhotoWatch-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B79BD1A3C0D9384C01449C8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -481,119 +626,7 @@
 			};
 			name = Debug;
 		};
-		72530D5ACC39A30C83D87D7B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5A692FEE75815B4932F268F /* Pods-PhotoWatch-Alamofire-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PhotoWatch-Alamofire/Pods-PhotoWatch-Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch-Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch-Alamofire/Pods-PhotoWatch-Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7F4CFFA08C41167510D2087D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 278D9FDA102D233E82162FE7 /* Pods-PhotoWatch.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch/Pods-PhotoWatch.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PhotoWatch;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		90AA5B1275DA5E8E16F5D0E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5A692FEE75815B4932F268F /* Pods-PhotoWatch-Alamofire-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PhotoWatch-Alamofire/Pods-PhotoWatch-Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch-Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch-Alamofire/Pods-PhotoWatch-Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AC041B4D47C422318E45B905 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C82281FE685C7F72D96444F3 /* Pods-PhotoWatch-SwiftyDropbox-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Pods-PhotoWatch-SwiftyDropbox-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Pods-PhotoWatch-SwiftyDropbox.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyDropbox;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B7816AB80C78D8C34DD8C261 /* Release */ = {
+		FBF0463CE950E0B76FEB2B19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -627,9 +660,9 @@
 			};
 			name = Release;
 		};
-		C111B0B436CF07699D9963CE /* Debug */ = {
+		FDA189524752F2EA04EAA9A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C82281FE685C7F72D96444F3 /* Pods-PhotoWatch-SwiftyDropbox-Private.xcconfig */;
+			baseConfigurationReference = BB5FCDD4F0AEE3455F3A93A7 /* Pods-PhotoWatch-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -638,14 +671,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Pods-PhotoWatch-SwiftyDropbox-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PhotoWatch-Alamofire/Pods-PhotoWatch-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch-Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch-SwiftyDropbox/Pods-PhotoWatch-SwiftyDropbox.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch-Alamofire/Pods-PhotoWatch-Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyDropbox;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -655,75 +688,46 @@
 			};
 			name = Debug;
 		};
-		E502247F4B294FFE6AFCCB39 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6690F50F5B55F4931977E1B3 /* Pods-PhotoWatch.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PhotoWatch/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PhotoWatch/Pods-PhotoWatch.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PhotoWatch;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31C9067659D1C98BC31A74F2 /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch-Alamofire" */ = {
+		0F149291B5C94E68625A9C00 /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch-SwiftyDropbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90AA5B1275DA5E8E16F5D0E8 /* Debug */,
-				72530D5ACC39A30C83D87D7B /* Release */,
+				925AC1123928F1C44B7FC4C4 /* Debug */,
+				878A872957B6B7AD487FFA70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DFFFC7631A0C486B0668207 /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch-SwiftyDropbox" */ = {
+		8385E05D6DACBD0E62164D96 /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C111B0B436CF07699D9963CE /* Debug */,
-				AC041B4D47C422318E45B905 /* Release */,
+				862F1919F955FFF9930E4832 /* Debug */,
+				4BBAE811F06FCF55808D5927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6387B440D0DCA3584F0F833 /* Build configuration list for PBXProject "Pods" */ = {
+		BA1FA0B9365A1ADD41912D6D /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26DFEEA4F92C9878E9C675E4 /* Debug */,
-				B7816AB80C78D8C34DD8C261 /* Release */,
+				B79BD1A3C0D9384C01449C8A /* Debug */,
+				FBF0463CE950E0B76FEB2B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1FA6B9CF079088C967AA04A /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch" */ = {
+		D8147CAEC8C6350A3F5DBF2D /* Build configuration list for PBXNativeTarget "Pods-PhotoWatch-Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F4CFFA08C41167510D2087D /* Debug */,
-				E502247F4B294FFE6AFCCB39 /* Release */,
+				FDA189524752F2EA04EAA9A1 /* Debug */,
+				94A6B0A25E00E2A5CA32316A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 00C16EA3C65C29CB0E0CE114 /* Project object */;
+	rootObject = E4EE02FD3EDCEA6E7254277B /* Project object */;
 }
