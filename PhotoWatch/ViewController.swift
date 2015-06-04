@@ -21,17 +21,14 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         
         // Check if the user is logged in
         // If so, display photo view controller
-        if let token = DropboxAuthManager.sharedAuthManager.getFirstAccessToken() {
-            
-            // Set the sharedClient for re-use
-            DropboxClient.sharedClient = DropboxClient(accessToken: token)
+        if let client = Dropbox.authorizedClient {
             
             // Display image background view w/logout button
             let backgroundViewController = self.storyboard?.instantiateViewControllerWithIdentifier("BackgroundViewController") as! UIViewController
             self.presentViewController(backgroundViewController, animated: false, completion: nil)
             
             // List contents of app folder
-            DropboxClient.sharedClient.filesListFolder(path: "").response { response, error in
+            client.filesListFolder(path: "").response { response, error in
                 if let result = response {
                     println("Folder contents:")
                     for entry in result.entries {

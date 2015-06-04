@@ -40,7 +40,7 @@ class PhotoViewController: UIViewController {
                     
                     // Download the photo from Dropbox
                     // A thumbnail would be better but there's no endpoint for that in API v2 yet!
-                    DropboxClient.sharedClient.filesDownload(path: "/\(filename)").response { response, error in
+                    Dropbox.authorizedClient!.filesDownload(path: "/\(filename)").response { response, error in
                         
                         if let (metadata, data) = response, image = UIImage(data: data) {
                                 
