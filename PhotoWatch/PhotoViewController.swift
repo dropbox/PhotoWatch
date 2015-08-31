@@ -62,6 +62,8 @@ class PhotoViewController: UIViewController {
                     }
                 }
             }
+        } else {
+            println("No photos to display")
         }
     }
     
