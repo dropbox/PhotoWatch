@@ -18,12 +18,15 @@ class InterfaceController: WKInterfaceController {
         // Get images from the shared app group
         if let images = self.getImagesFromAppGroup() {
             
-            // Data for each photo view
-            let controllerNames = [String](count: images.count, repeatedValue: "PhotoInterfaceController")
-            let contexts = images.map({ image in ["image": image] })
-            
-            // Update watch display
-            WKInterfaceController.reloadRootControllersWithNames(controllerNames, contexts: contexts)
+            if images.count > 0 {
+
+                // Data for each photo view
+                let controllerNames = [String](count: images.count, repeatedValue: "PhotoInterfaceController")
+                let contexts = images.map({ image in ["image": image] })
+                
+                // Update watch display
+                WKInterfaceController.reloadRootControllersWithNames(controllerNames, contexts: contexts)
+            }
         }
     }
     

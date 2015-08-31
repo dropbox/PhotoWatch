@@ -13,7 +13,9 @@ import SwiftyDropbox
 class PhotoViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var noPhotosLabel: UILabel!
+    
     var filename: String?
     
     override func viewDidLoad() {
@@ -63,7 +65,11 @@ class PhotoViewController: UIViewController {
                 }
             }
         } else {
+            // No photos in the folder to display.
             println("No photos to display")
+            
+            self.activityIndicator.hidden = true
+            self.noPhotosLabel.hidden = false
         }
     }
     
