@@ -338,6 +338,7 @@
 		4C0F49061B017D85001EB03C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Dropbox;
 				TargetAttributes = {

@@ -46,9 +46,9 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
                     pageViewController.dataSource = self
                     
                     // Display the first photo screen
-                    if self.filenames != nil {
+                    if let fnames = self.filenames {
                         let photoViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PhotoViewController") as! PhotoViewController
-                        photoViewController.filename = self.filenames![0]
+                        photoViewController.filename = fnames.first
                         pageViewController.setViewControllers([photoViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
                     }
                     
