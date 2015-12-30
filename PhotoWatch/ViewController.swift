@@ -24,15 +24,15 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         if let client = Dropbox.authorizedClient {
             
             // Display image background view w/logout button
-            let backgroundViewController = self.storyboard?.instantiateViewControllerWithIdentifier("BackgroundViewController") as! UIViewController
+            let backgroundViewController = self.storyboard?.instantiateViewControllerWithIdentifier("BackgroundViewController") as UIViewController!
             self.presentViewController(backgroundViewController, animated: false, completion: nil)
             
             // List contents of app folder
-            client.filesListFolder(path: "").response { response, error in
+            client.files.listFolder(path: "").response { response, error in
                 if let result = response {
-                    println("Folder contents:")
+                    print("Folder contents:")
                     for entry in result.entries {
-                        println(entry.name)
+                        print(entry.name)
                         
                         // Check that file is a photo (by file extension)
                         if entry.name.hasSuffix(".jpg") || entry.name.hasSuffix(".png") {
@@ -61,7 +61,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
                     pageViewController.didMoveToParentViewController(self)
                     
                 } else {
-                    println("Error: \(error!)")
+                    print("Error: \(error!)")
                 }
             }
         }
@@ -71,7 +71,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         let currentViewController = viewController as! PhotoViewController
         var nextIndex = 0
         
-        if let index = find(self.filenames!, currentViewController.filename!) {
+        if let index = self.filenames!.indexOf(currentViewController.filename!) {
             if index < self.filenames!.count - 1 {
                 nextIndex = index + 1
             }
@@ -87,7 +87,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         let currentViewController = viewController as! PhotoViewController
         var nextIndex = self.filenames!.count - 1
         
-        if let index = find(self.filenames!, currentViewController.filename!) {
+        if let index = self.filenames!.indexOf(currentViewController.filename!) {
             if index > 0 {
                 nextIndex = index - 1
             }

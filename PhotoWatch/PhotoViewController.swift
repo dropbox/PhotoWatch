@@ -29,24 +29,30 @@ class PhotoViewController: UIViewController {
     
             if let fileURL = containerURL?.URLByAppendingPathComponent(filename) {
                 
-                println("Finding file at URL: \(fileURL)")
+                print("Finding file at URL: \(fileURL)")
             
                 if let data = NSData(contentsOfURL: fileURL) {
-                    println("Image found in cache.")
+                    print("Image found in cache.")
                     
                     // Display image
                     self.imageView.image = UIImage(data: data)
                     
                 } else {
-                    println("Image not cached!")
+                    print("Image not cached!")
                     
-                    // Download the photo from Dropbox
-                    // A thumbnail would be better but there's no endpoint for that in API v2 yet!
-                    Dropbox.authorizedClient!.filesDownload(path: "/\(filename)").response { response, error in
-                        
-                        if let (metadata, data) = response, image = UIImage(data: data) {
-                                
-                            println("Dowloaded file name: \(metadata.name)")
+                    let destination : (NSURL, NSHTTPURLResponse) -> NSURL = { temporaryURL, response in
+                        let fileManager = NSFileManager.defaultManager()
+                        let directoryURL = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+                        // generate a unique name for this file in case we've seen it before
+                        let UUID = NSUUID().UUIDString
+                        let pathComponent = "\(UUID)-\(response.suggestedFilename!)"
+                        return directoryURL.URLByAppendingPathComponent(pathComponent)
+                    }
+                    
+                    Dropbox.authorizedClient!.files.getThumbnail(path: "/\(filename)", format: .Png, size: .W640h480, destination: destination).response { response, error in
+                        if let (metadata, url) = response, data = NSData(contentsOfURL: url), image = UIImage(data: data) {
+                            
+                            print("Dowloaded file name: \(metadata.name)")
                             
                             // Resize image for watch (so it's not huge)
                             let resizedImage = self.resizeImage(image)
@@ -56,17 +62,18 @@ class PhotoViewController: UIViewController {
                             
                             // Save image to local filesystem app group - allows us to access in the watch
                             let resizedImageData = UIImageJPEGRepresentation(resizedImage, 1.0)
-                            resizedImageData.writeToURL(fileURL, atomically: true)
+                            resizedImageData!.writeToURL(fileURL, atomically: true)
                             
                         } else {
-                            println("Error downloading file from Dropbox: \(error!)")
+                            print("Error downloading file from Dropbox: \(error!)")
                         }
+                        
                     }
                 }
             }
         } else {
             // No photos in the folder to display.
-            println("No photos to display")
+            print("No photos to display")
             
             self.activityIndicator.hidden = true
             self.noPhotosLabel.hidden = false
@@ -90,7 +97,7 @@ class PhotoViewController: UIViewController {
         
         UIGraphicsBeginImageContextWithOptions(size!, !hasAlpha, scale)
         
-        var rect = CGRect(origin: CGPointZero, size: size!)
+        let rect = CGRect(origin: CGPointZero, size: size!)
         UIRectClip(rect)
         image.drawInRect(rect)
         

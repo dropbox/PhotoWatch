@@ -37,16 +37,22 @@ class InterfaceController: WKInterfaceController {
         if let containerURL = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.com.Dropbox.DropboxPhotoWatch") {
         
             // Fetch all files in the app group
-            for fileURL in NSFileManager.defaultManager().contentsOfDirectoryAtURL(containerURL, includingPropertiesForKeys: [NSURLNameKey], options: nil, error: nil) as! Array <NSURL> {
+            do {
+                let fileURLArray = try NSFileManager.defaultManager().contentsOfDirectoryAtURL(containerURL, includingPropertiesForKeys: [NSURLNameKey], options: [])
                 
-                // Check that file is a photo (by file extension)
-                if fileURL.absoluteString!.hasSuffix(".jpg") || fileURL.absoluteString!.hasSuffix(".png") {
-                    
-                    // Add image to array of images
-                    if let data = NSData(contentsOfURL: fileURL), image = UIImage(data: data) {
-                        images.append(image)
+                for fileURL in fileURLArray {
+                    // Check that file is a photo (by file extension)
+                    if fileURL.absoluteString.hasSuffix(".jpg") || fileURL.absoluteString.hasSuffix(".png") {
+                        
+                        // Add image to array of images
+                        if let data = NSData(contentsOfURL: fileURL), image = UIImage(data: data) {
+                            images.append(image)
+                        }
                     }
+                    
                 }
+            } catch _ as NSError {
+                // Do nothing with the error
             }
         }
         

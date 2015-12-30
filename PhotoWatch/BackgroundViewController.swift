@@ -16,16 +16,24 @@ class BackgroundViewController: UIViewController {
         // Clear the app group of all files
         if let containerURL = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.com.Dropbox.DropboxPhotoWatch") {
             
-            for item in NSFileManager.defaultManager().contentsOfDirectoryAtURL(containerURL, includingPropertiesForKeys: [NSURLNameKey], options: nil, error: nil) as Array! {
-                if let fileURL = item as? NSURL {
-                    
+            // Fetch all files in the app group
+            do {
+                let fileURLArray = try NSFileManager.defaultManager().contentsOfDirectoryAtURL(containerURL, includingPropertiesForKeys: [NSURLNameKey], options: [])
+                
+                for fileURL in fileURLArray {
                     // Check that file is a photo (by file extension)
-                    if fileURL.absoluteString!.hasSuffix(".jpg") || fileURL.absoluteString!.hasSuffix(".png") {
+                    if fileURL.absoluteString.hasSuffix(".jpg") || fileURL.absoluteString.hasSuffix(".png") {
                         
-                        // Delete the photo from the app group
-                        NSFileManager.defaultManager().removeItemAtURL(fileURL, error: nil)
+                        do {
+                            // Delete the photo from the app group
+                            try NSFileManager.defaultManager().removeItemAtURL(fileURL)
+                        } catch _ as NSError {
+                            // Do nothing with the error
+                        }
                     }
                 }
+            } catch _ as NSError {
+                // Do nothing with the error
             }
         }
         
