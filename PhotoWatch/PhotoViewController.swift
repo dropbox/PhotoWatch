@@ -19,8 +19,6 @@ class PhotoViewController: UIViewController {
     var filename: String?
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
         // Display photo for page
         if let filename = self.filename {
             

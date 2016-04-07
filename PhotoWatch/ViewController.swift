@@ -15,8 +15,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     
 
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-
         self.filenames = []
         
         // Check if the user is logged in
@@ -46,9 +44,9 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
                     pageViewController.dataSource = self
                     
                     // Display the first photo screen
-                    if let fnames = self.filenames {
+                    if self.filenames != nil {
                         let photoViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PhotoViewController") as! PhotoViewController
-                        photoViewController.filename = fnames.first
+                        photoViewController.filename = self.filenames!.first
                         pageViewController.setViewControllers([photoViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
                     }
                     
@@ -68,35 +66,43 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        let currentViewController = viewController as! PhotoViewController
-        var nextIndex = 0
-        
-        if let index = self.filenames!.indexOf(currentViewController.filename!) {
-            if index < self.filenames!.count - 1 {
-                nextIndex = index + 1
+        if self.filenames != nil {
+            let currentViewController = viewController as! PhotoViewController
+            var nextIndex = 0
+            
+            if let index = self.filenames!.indexOf(currentViewController.filename!) {
+                if index < self.filenames!.count - 1 {
+                    nextIndex = index + 1
+                }
             }
+            
+            let photoViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PhotoViewController") as! PhotoViewController
+            photoViewController.filename = self.filenames![nextIndex]
+            
+            return photoViewController
         }
         
-        let photoViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PhotoViewController") as! PhotoViewController
-        photoViewController.filename = self.filenames![nextIndex]
-
-        return photoViewController
+        return nil
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        let currentViewController = viewController as! PhotoViewController
-        var nextIndex = self.filenames!.count - 1
-        
-        if let index = self.filenames!.indexOf(currentViewController.filename!) {
-            if index > 0 {
-                nextIndex = index - 1
+        if self.filenames != nil {
+            let currentViewController = viewController as! PhotoViewController
+            var nextIndex = self.filenames!.count - 1
+            
+            if let index = self.filenames!.indexOf(currentViewController.filename!) {
+                if index > 0 {
+                    nextIndex = index - 1
+                }
             }
+            
+            let photoViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PhotoViewController") as! PhotoViewController
+            photoViewController.filename = self.filenames![nextIndex]
+            
+            return photoViewController
         }
         
-        let photoViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PhotoViewController") as! PhotoViewController
-        photoViewController.filename = self.filenames![nextIndex]
-        
-        return photoViewController
+        return nil
     }
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {

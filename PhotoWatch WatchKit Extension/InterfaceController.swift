@@ -13,8 +13,6 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
-        
         // Get images from the shared app group
         if let images = self.getImagesFromAppGroup() {
             
@@ -42,6 +40,8 @@ class InterfaceController: WKInterfaceController {
                 
                 for fileURL in fileURLArray {
                     // Check that file is a photo (by file extension)
+                    print("Finding file at URL: \(fileURL)")
+                    
                     if fileURL.absoluteString.hasSuffix(".jpg") || fileURL.absoluteString.hasSuffix(".png") {
                         
                         // Add image to array of images
