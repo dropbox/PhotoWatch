@@ -1,7 +1,7 @@
 ![Alamofire: Elegant Networking in Swift](https://raw.githubusercontent.com/Alamofire/Alamofire/assets/alamofire.png)
 
 [![Build Status](https://travis-ci.org/Alamofire/Alamofire.svg)](https://travis-ci.org/Alamofire/Alamofire)
-[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/Alamofire.svg)](https://img.shields.io/cocoapods/v/Alamofire.svg)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Alamofire.svg)](https://img.shields.io/cocoapods/v/Alamofire.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/Alamofire.svg?style=flat)](http://cocoadocs.org/docsets/Alamofire)
 [![Twitter](https://img.shields.io/badge/twitter-@AlamofireSF-blue.svg?style=flat)](http://twitter.com/AlamofireSF)
@@ -21,6 +21,13 @@ Alamofire is an HTTP networking library written in Swift.
 - [x] cURL Debug Output
 - [x] Comprehensive Unit Test Coverage
 - [x] [Complete Documentation](http://cocoadocs.org/docsets/Alamofire)
+
+## Component Libraries
+
+In order to keep Alamofire focused specifically on core networking implementations, additional component libraries have been created by the [Alamofire Software Foundation](https://github.com/Alamofire/Foundation) to bring additional functionality to the Alamofire ecosystem.
+
+* [AlamofireImage](https://github.com/Alamofire/AlamofireImage) - An image library including image response serializers, `UIImage` and `UIImageView` extensions, custom image filters, an auto-purging in-memory cache and a priority-based image downloading system.
+* [AlamofireNetworkActivityIndicator](https://github.com/Alamofire/AlamofireNetworkActivityIndicator) - Controls the visibility of the network activity indicator on iOS using Alamofire. It contains configurable delay timers to help mitigate flicker and can support `NSURLSession` instances not managed by Alamofire.
 
 ## Requirements
 
@@ -183,7 +190,7 @@ Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
           }
 ```
 
-> The `response` serializer does NOT evaluate any of the response data. It merely forwards on all the information directly from the URL session delegate. We strongly encourage you to leverage the other responser serializers taking advantage of `Response` and `Result` types.
+> The `response` serializer does NOT evaluate any of the response data. It merely forwards on all the information directly from the URL session delegate. We strongly encourage you to leverage the other response serializers taking advantage of `Response` and `Result` types.
 
 #### Response Data Handler
 
@@ -571,6 +578,25 @@ Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
              }
          }
 ```
+
+### Timeline
+
+Alamofire collects timings throughout the lifecycle of a `Request` and creates a `Timeline` object exposed as a property on a `Response`.
+
+```swift
+Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
+         .validate()
+         .responseJSON { response in
+             print(response.timeline)
+         }
+```
+
+The above reports the following `Timeline` info:
+
+- `Latency`: 0.428 seconds
+- `Request Duration`: 0.428 seconds
+- `Serialization Duration`: 0.001 seconds
+- `Total Duration`: 0.429 seconds
 
 ### Printable
 
@@ -1114,13 +1140,34 @@ Whether you need to set the `NSExceptionRequiresForwardSecrecy` to `NO` depends 
 
 > It is recommended to always use valid certificates in production environments.
 
+### Network Reachability
+
+The `NetworkReachabilityManager` listens for reachability changes of hosts and addresses for both WWAN and WiFi network interfaces.
+
+```swift
+let manager = NetworkReachabilityManager(host: "www.apple.com")
+
+manager?.listener = { status in
+    print("Network Status Changed: \(status)")
+}
+
+manager?.startListening()
+```
+
+> Make sure to remember to retain the `manager` in the above example, or no status changes will be reported.
+
+There are some important things to remember when using network reachability to determine what to do next.
+
+* **Do NOT** use Reachability to determine if a network request should be sent.
+  * You should **ALWAYS** send it.
+* When Reachability is restored, use the event to retry failed network requests.
+  * Even though the network requests may still fail, this is a good moment to retry them.
+* The network reachability status can be useful for determining why a network request may have failed.
+  * If a network request fails, it is more useful to tell the user that the network request failed due to being offline rather than a more technical errror, such as "request timed out."
+
+> It is recommended to check out [WWDC 2012 Session 706, "Networking Best Practices"](https://developer.apple.com/videos/play/wwdc2012-706/) for more info.
+
 ---
-
-## Component Libraries
-
-In order to keep Alamofire focused specifically on core networking implementations, additional component libraries have been created by the [Alamofire Software Foundation](https://github.com/Alamofire/Foundation) to bring additional functionality to the Alamofire ecosystem.
-
-* [AlamofireImage](https://github.com/Alamofire/AlamofireImage) - An image library including image response serializers, `UIImage` and `UIImageView` extensions, custom image filters, an auto-purging in-memory cache and a priority-based image downloading system.
 
 ## Open Rdars
 
