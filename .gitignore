@@ -17,3 +17,6 @@ DerivedData
 *.ipa
 *.xcuserstate
 *.DS_Store
+
+## project dependencies
+Pods/
