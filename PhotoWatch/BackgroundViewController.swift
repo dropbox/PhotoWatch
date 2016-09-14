@@ -22,7 +22,7 @@ class BackgroundViewController: UIViewController {
                 
                 for fileURL in fileURLArray {
                     // Check that file is a photo (by file extension)
-                    if fileURL.absoluteString.hasSuffix(".jpg") || fileURL.absoluteString.hasSuffix(".png") {
+                    if fileURL.absoluteString!.hasSuffix(".jpg") || fileURL.absoluteString!.hasSuffix(".png") {
                         
                         do {
                             // Delete the photo from the app group

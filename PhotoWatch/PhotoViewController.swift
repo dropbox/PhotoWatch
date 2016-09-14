@@ -44,7 +44,7 @@ class PhotoViewController: UIViewController {
                         // generate a unique name for this file in case we've seen it before
                         let UUID = NSUUID().UUIDString
                         let pathComponent = "\(UUID)-\(response.suggestedFilename!)"
-                        return directoryURL.URLByAppendingPathComponent(pathComponent)
+                        return directoryURL.URLByAppendingPathComponent(pathComponent)!
                     }
                     
                     Dropbox.authorizedClient!.files.getThumbnail(path: "/\(filename)", format: .Png, size: .W640h480, destination: destination).response { response, error in
@@ -102,7 +102,7 @@ class PhotoViewController: UIViewController {
         let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return scaledImage
+        return scaledImage!
     }
     
 }

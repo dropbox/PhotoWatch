@@ -12,7 +12,6 @@
 		4C0F49191B017D85001EB03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F49171B017D85001EB03C /* Main.storyboard */; };
 		4C0F491B1B017D85001EB03C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F491A1B017D85001EB03C /* Images.xcassets */; };
 		4C0F491E1B017D85001EB03C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F491C1B017D85001EB03C /* LaunchScreen.xib */; };
-		4C0F492A1B017D86001EB03C /* PhotoWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F49291B017D86001EB03C /* PhotoWatchTests.swift */; };
 		4C0F493C1B017DC6001EB03C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F493B1B017DC6001EB03C /* InterfaceController.swift */; };
 		4C0F493E1B017DC6001EB03C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F493D1B017DC6001EB03C /* Images.xcassets */; };
 		4C0F494A1B017DC7001EB03C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F49481B017DC7001EB03C /* Interface.storyboard */; };
@@ -26,13 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4C0F49241B017D86001EB03C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C0F49061B017D85001EB03C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C0F490D1B017D85001EB03C;
-			remoteInfo = PhotoWatch;
-		};
 		4CC1DD931C33489400A4E529 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C0F49061B017D85001EB03C /* Project object */;
@@ -83,7 +75,6 @@
 		4C0F49181B017D85001EB03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C0F491A1B017D85001EB03C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C0F491D1B017D85001EB03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4C0F49231B017D86001EB03C /* PhotoWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0F49281B017D86001EB03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C0F49291B017D86001EB03C /* PhotoWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWatchTests.swift; sourceTree = "<group>"; };
 		4C0F49371B017DC6001EB03C /* PhotoWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PhotoWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,13 +110,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C0F49201B017D86001EB03C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4C0F49341B017DC6001EB03C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				4C0F490E1B017D85001EB03C /* PhotoWatch.app */,
-				4C0F49231B017D86001EB03C /* PhotoWatchTests.xctest */,
 				4C0F49371B017DC6001EB03C /* PhotoWatch WatchKit Extension.appex */,
 				4C0F49411B017DC7001EB03C /* PhotoWatch WatchKit App.app */,
 			);
@@ -281,24 +264,6 @@
 			productReference = 4C0F490E1B017D85001EB03C /* PhotoWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4C0F49221B017D86001EB03C /* PhotoWatchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C0F49301B017D86001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatchTests" */;
-			buildPhases = (
-				4C0F491F1B017D86001EB03C /* Sources */,
-				4C0F49201B017D86001EB03C /* Frameworks */,
-				4C0F49211B017D86001EB03C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C0F49251B017D86001EB03C /* PBXTargetDependency */,
-			);
-			name = PhotoWatchTests;
-			productName = PhotoWatchTests;
-			productReference = 4C0F49231B017D86001EB03C /* PhotoWatchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		4C0F49361B017DC6001EB03C /* PhotoWatch WatchKit Extension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C0F49531B017DC7001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatch WatchKit Extension" */;
@@ -341,25 +306,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Dropbox;
 				TargetAttributes = {
 					4C0F490D1B017D85001EB03C = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = V49TWGK7ZB;
+						DevelopmentTeam = NX6T6UBSFF;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
 						};
 					};
-					4C0F49221B017D86001EB03C = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 4C0F490D1B017D85001EB03C;
-					};
 					4C0F49361B017DC6001EB03C = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = V49TWGK7ZB;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -369,6 +331,7 @@
 					4C0F49401B017DC7001EB03C = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = V49TWGK7ZB;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -386,7 +349,6 @@
 			projectRoot = "";
 			targets = (
 				4C0F490D1B017D85001EB03C /* PhotoWatch */,
-				4C0F49221B017D86001EB03C /* PhotoWatchTests */,
 				4C0F49361B017DC6001EB03C /* PhotoWatch WatchKit Extension */,
 				4C0F49401B017DC7001EB03C /* PhotoWatch WatchKit App */,
 			);
@@ -401,13 +363,6 @@
 				4C0F49191B017D85001EB03C /* Main.storyboard in Resources */,
 				4C0F491E1B017D85001EB03C /* LaunchScreen.xib in Resources */,
 				4C0F491B1B017D85001EB03C /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C0F49211B017D86001EB03C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +428,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -490,14 +445,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C0F491F1B017D86001EB03C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C0F492A1B017D86001EB03C /* PhotoWatchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4C0F49331B017DC6001EB03C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,11 +457,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C0F49251B017D86001EB03C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C0F490D1B017D85001EB03C /* PhotoWatch */;
-			targetProxy = 4C0F49241B017D86001EB03C /* PBXContainerItemProxy */;
-		};
 		4CC1DD941C33489400A4E529 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C0F49361B017DC6001EB03C /* PhotoWatch WatchKit Extension */;
@@ -558,6 +500,7 @@
 		4C0F492B1B017D86001EB03C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -568,8 +511,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -603,6 +548,7 @@
 		4C0F492C1B017D86001EB03C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -613,8 +559,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -633,6 +581,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -641,19 +590,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 355AFDF1E6FCFB40FE4E8780 /* Pods-PhotoWatch.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PhotoWatch/PhotoWatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NX6T6UBSFF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
 				);
 				INFOPLIST_FILE = PhotoWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dropbox.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -661,10 +613,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 755381E73622B6E83721F570 /* Pods-PhotoWatch.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PhotoWatch/PhotoWatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NX6T6UBSFF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
@@ -674,52 +628,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dropbox.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		4C0F49311B017D86001EB03C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PhotoWatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dropbox.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoWatch.app/PhotoWatch";
-			};
-			name = Debug;
-		};
-		4C0F49321B017D86001EB03C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PhotoWatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dropbox.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoWatch.app/PhotoWatch";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
 		4C0F49511B017DC7001EB03C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -731,6 +650,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -739,10 +659,10 @@
 		4C0F49521B017DC7001EB03C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = PhotoWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "PhotoWatch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dropbox.PhotoWatch.watchkitapp;
@@ -750,6 +670,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -761,10 +682,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PhotoWatch WatchKit Extension/PhotoWatch WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -776,6 +694,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -787,10 +706,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PhotoWatch WatchKit Extension/PhotoWatch WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "PhotoWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dropbox.PhotoWatch.watchkitapp.watchkitextension;
@@ -798,6 +714,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -820,15 +737,6 @@
 			buildConfigurations = (
 				4C0F492E1B017D86001EB03C /* Debug */,
 				4C0F492F1B017D86001EB03C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4C0F49301B017D86001EB03C /* Build configuration list for PBXNativeTarget "PhotoWatchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C0F49311B017D86001EB03C /* Debug */,
-				4C0F49321B017D86001EB03C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

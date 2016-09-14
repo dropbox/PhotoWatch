@@ -42,7 +42,7 @@ class InterfaceController: WKInterfaceController {
                     // Check that file is a photo (by file extension)
                     print("Finding file at URL: \(fileURL)")
                     
-                    if fileURL.absoluteString.hasSuffix(".jpg") || fileURL.absoluteString.hasSuffix(".png") {
+                    if fileURL.absoluteString!.hasSuffix(".jpg") || fileURL.absoluteString!.hasSuffix(".png") {
                         
                         // Add image to array of images
                         if let data = NSData(contentsOfURL: fileURL), image = UIImage(data: data) {
