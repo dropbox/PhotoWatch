@@ -12,40 +12,40 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    override func awakeWithContext(context: AnyObject?) {
+    override func awake(withContext context: Any?) {
         // Get images from the shared app group
         if let images = self.getImagesFromAppGroup() {
             
             if images.count > 0 {
 
                 // Data for each photo view
-                let controllerNames = [String](count: images.count, repeatedValue: "PhotoInterfaceController")
+                let controllerNames = [String](repeating: "PhotoInterfaceController", count: images.count)
                 let contexts = images.map({ image in ["image": image] })
                 
                 // Update watch display
-                WKInterfaceController.reloadRootControllersWithNames(controllerNames, contexts: contexts)
+                WKInterfaceController.reloadRootControllers(withNames: controllerNames, contexts: contexts)
             }
         }
     }
     
-    private func getImagesFromAppGroup() -> Array<UIImage>? {
+    fileprivate func getImagesFromAppGroup() -> Array<UIImage>? {
         var images = [UIImage]()
         
         // Get app group shared by phone and watch
-        if let containerURL = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.com.Dropbox.DropboxPhotoWatch") {
+        if let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.Dropbox.DropboxPhotoWatch") {
         
             // Fetch all files in the app group
             do {
-                let fileURLArray = try NSFileManager.defaultManager().contentsOfDirectoryAtURL(containerURL, includingPropertiesForKeys: [NSURLNameKey], options: [])
+                let fileURLArray = try FileManager.default.contentsOfDirectory(at: containerURL, includingPropertiesForKeys: [URLResourceKey.nameKey], options: [])
                 
                 for fileURL in fileURLArray {
                     // Check that file is a photo (by file extension)
                     print("Finding file at URL: \(fileURL)")
                     
-                    if fileURL.absoluteString!.hasSuffix(".jpg") || fileURL.absoluteString!.hasSuffix(".png") {
+                    if fileURL.absoluteString.hasSuffix(".jpg") || fileURL.absoluteString.hasSuffix(".png") {
                         
                         // Add image to array of images
-                        if let data = NSData(contentsOfURL: fileURL), image = UIImage(data: data) {
+                        if let data = try? Data(contentsOf: fileURL), let image = UIImage(data: data) {
                             images.append(image)
                         }
                     }

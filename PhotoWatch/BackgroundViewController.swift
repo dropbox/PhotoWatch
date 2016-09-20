@@ -11,22 +11,22 @@ import SwiftyDropbox
 
 class BackgroundViewController: UIViewController {
     
-    @IBAction func logoutButtonPressed(sender: AnyObject) {
+    @IBAction func logoutButtonPressed(_ sender: AnyObject) {
 
         // Clear the app group of all files
-        if let containerURL = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.com.Dropbox.DropboxPhotoWatch") {
+        if let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.Dropbox.DropboxPhotoWatch") {
             
             // Fetch all files in the app group
             do {
-                let fileURLArray = try NSFileManager.defaultManager().contentsOfDirectoryAtURL(containerURL, includingPropertiesForKeys: [NSURLNameKey], options: [])
+                let fileURLArray = try FileManager.default.contentsOfDirectory(at: containerURL, includingPropertiesForKeys: [URLResourceKey.nameKey], options: [])
                 
                 for fileURL in fileURLArray {
                     // Check that file is a photo (by file extension)
-                    if fileURL.absoluteString!.hasSuffix(".jpg") || fileURL.absoluteString!.hasSuffix(".png") {
+                    if fileURL.absoluteString.hasSuffix(".jpg") || fileURL.absoluteString.hasSuffix(".png") {
                         
                         do {
                             // Delete the photo from the app group
-                            try NSFileManager.defaultManager().removeItemAtURL(fileURL)
+                            try FileManager.default.removeItem(at: fileURL)
                         } catch _ as NSError {
                             // Do nothing with the error
                         }
@@ -38,9 +38,9 @@ class BackgroundViewController: UIViewController {
         }
         
         // Unlink from Dropbox
-        Dropbox.unlinkClient()
+        DropboxClientsManager.unlinkClient()
         
         // Dismiss view controller to show login screen
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }

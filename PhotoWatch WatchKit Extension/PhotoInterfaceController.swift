@@ -14,7 +14,7 @@ class PhotoInterfaceController: WKInterfaceController {
     
     @IBOutlet weak var image: WKInterfaceImage!
     
-    override func awakeWithContext(context: AnyObject?) {
+    override func awake(withContext context: Any?) {
         if let data = context as? Dictionary<String, UIImage> {
             self.image.setImage(data["image"])
         }
