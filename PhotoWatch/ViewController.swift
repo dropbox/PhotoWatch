@@ -22,7 +22,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         if let client = DropboxClientsManager.authorizedClient {
             
             // Display image background view w/logout button
-            let backgroundViewController = self.storyboard?.instantiateViewController(withIdentifier: "BackgroundViewController") as UIViewController!
+            let backgroundViewController = self.storyboard?.instantiateViewController(withIdentifier: "BackgroundViewController")
             self.present(backgroundViewController!, animated: false, completion: nil)
             
             // List contents of app folder
@@ -54,9 +54,9 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
                     pageViewController.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - 30);
                     
                     // Display the page view controller on top of background view controller
-                    backgroundViewController!.addChildViewController(pageViewController)
+                    backgroundViewController!.addChild(pageViewController)
                     backgroundViewController!.view.addSubview(pageViewController.view)
-                    pageViewController.didMove(toParentViewController: self)
+                    pageViewController.didMove(toParent: self)
                     
                 } else {
                     print("Error: \(error!)")

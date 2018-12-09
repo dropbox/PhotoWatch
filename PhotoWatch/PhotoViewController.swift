@@ -60,7 +60,7 @@ class PhotoViewController: UIViewController {
                                     self.imageView.image = resizedImage
                                     
                                     // Save image to local filesystem app group - allows us to access in the watch
-                                    let resizedImageData = UIImageJPEGRepresentation(resizedImage, 1.0)
+                                    let resizedImageData = resizedImage.jpegData(compressionQuality: 1.0)
                                     try? resizedImageData!.write(to: fileURL)
                                 }
                             }
