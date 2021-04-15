@@ -66,18 +66,17 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        if self.filenames != nil {
-            let currentViewController = viewController as! PhotoViewController
+        if let filenames = self.filenames, let currentViewController = viewController as? PhotoViewController {
             var nextIndex = 0
-            
-            if let index = self.filenames!.index(of: currentViewController.filename!) {
-                if index < self.filenames!.count - 1 {
+
+            if let filename = currentViewController.filename, let index = filenames.firstIndex(of: filename) {
+                if index < filenames.count - 1 {
                     nextIndex = index + 1
                 }
             }
-            
+            guard nextIndex < filenames.count else { return nil }
             let photoViewController = self.storyboard?.instantiateViewController(withIdentifier: "PhotoViewController") as! PhotoViewController
-            photoViewController.filename = self.filenames![nextIndex]
+            photoViewController.filename = filenames[nextIndex]
             
             return photoViewController
         }
@@ -86,18 +85,18 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        if self.filenames != nil {
-            let currentViewController = viewController as! PhotoViewController
+        if let filenames = self.filenames, let currentViewController = viewController as? PhotoViewController {
             var nextIndex = self.filenames!.count - 1
             
-            if let index = self.filenames!.index(of: currentViewController.filename!) {
+            if let filename = currentViewController.filename, let index = filenames.firstIndex(of: filename) {
                 if index > 0 {
                     nextIndex = index - 1
                 }
             }
-            
+            guard nextIndex >= 0 else { return nil }
+
             let photoViewController = self.storyboard?.instantiateViewController(withIdentifier: "PhotoViewController") as! PhotoViewController
-            photoViewController.filename = self.filenames![nextIndex]
+            photoViewController.filename = filenames[nextIndex]
             
             return photoViewController
         }
@@ -116,7 +115,14 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
     @IBAction func linkButtonPressed(_ sender: AnyObject) {
         // Present view to log in
-        DropboxClientsManager.authorizeFromController(UIApplication.shared, controller: self, openURL: {(url: URL) -> Void in UIApplication.shared.openURL(url)})
+        DropboxClientsManager.authorizeFromControllerV2(
+            UIApplication.shared,
+            controller: self,
+            loadingStatusDelegate: nil,
+            openURL: {(url: URL) -> Void in UIApplication.shared.openURL(url)},
+            scopeRequest: ScopeRequest(scopeType: .user,
+                                       scopes: ["files.metadata.read", "files.content.read"],
+                                       includeGrantedScopes: false))
     }
 }
 
